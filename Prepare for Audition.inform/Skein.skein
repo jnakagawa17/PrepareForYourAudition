@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<Skein rootNode="node-0x7679ee0" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+  <generator>Zoom</generator>
+  <activeNode nodeId="node-0x7679ee0" />
+  <item nodeId="node-0x7679ee0">
+    <command xml:space="preserve">- start -</command>
+    <result xml:space="preserve">
+
+
+Prepare for Audition
+An Interactive Fiction by Jonathan Nakagawa
+Release 1 / Serial number 140929 / Inform 7 build 6L38 (I6/v6.33 lib 6/12N) SD
+
+East Corridor
+You can see Library Door here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="7">NO</temporary>
+    <children>
+      <child nodeId="node-0x30f840" />
+    </children>
+  </item>
+  <item nodeId="node-0x30f840">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+West Corridor
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="7">YES</temporary>
+    <children>
+      <child nodeId="node-0x88b8690" />
+    </children>
+  </item>
+  <item nodeId="node-0x88b8690">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Bathroom
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="7">YES</temporary>
+    <children>
+      <child nodeId="node-0x76f9830" />
+    </children>
+  </item>
+  <item nodeId="node-0x76f9830">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+West Corridor
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="7">YES</temporary>
+    <children>
+      <child nodeId="node-0x76dd860" />
+    </children>
+  </item>
+  <item nodeId="node-0x76dd860">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Audition Room
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="7">YES</temporary>
+    <children>
+      <child nodeId="node-0x76f1760" />
+    </children>
+  </item>
+  <item nodeId="node-0x76f1760">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+West Corridor
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="7">YES</temporary>
+    <children>
+      <child nodeId="node-0x763cfc0" />
+    </children>
+  </item>
+  <item nodeId="node-0x763cfc0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+East Corridor
+You can see Library Door here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="6">YES</temporary>
+  </item>
+</Skein>
