@@ -6,7 +6,9 @@ West Corridor is a room. It is west of East Corridor.
 
 Vending Machine is a thing. It is in West Corridor.
 
-Desk is a thing. 
+Desk is a thing. It is in West Corridor. 
+
+Attendant is a woman in West Corridor. Understand "woman" as Attendant. "Test"
 
 Bathroom is a room. It is south of West Corridor.
 
