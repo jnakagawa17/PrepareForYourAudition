@@ -1,28 +1,101 @@
 <?xml version="1.0"?>
-<Skein rootNode="node-0x7679ee0" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+<Skein rootNode="node-0x43d3f0" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x76e5920" />
-  <item nodeId="node-0x7679ee0">
+  <activeNode nodeId="node-0x7889e10" />
+  <item nodeId="node-0x43d3f0">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
 
 
+Today is the day! More than a decade of work has all led you to this one moment. You steadly trod into the music building supressing the desire to bound forward wildly screamming from fear and excitement. You pass through the east side of a hallway stopping before the attendant&apos;s desk.
+
 Prepare for Audition
 An Interactive Fiction by Jonathan Nakagawa
-Release 1 / Serial number 140929 / Inform 7 build 6L38 (I6/v6.33 lib 6/12N) SD
+Release 1 / Serial number 141002 / Inform 7 build 6L38 (I6/v6.33 lib 6/12N) SD
 
-East Corridor
-You can see Library Door here.
+West Corridor
+Test
+
+You can also see Vending Machine and Desk here.
 
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="12">NO</temporary>
+    <temporary score="14">NO</temporary>
     <children>
-      <child nodeId="node-0x30f840" />
+      <child nodeId="node-0x43d440" />
+      <child nodeId="node-0xbb27960" />
     </children>
   </item>
-  <item nodeId="node-0x30f840">
+  <item nodeId="node-0xbb27960">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+East Corridor
+You can see Library Door, Practice Room Door and Pianist here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="14">YES</temporary>
+    <children>
+      <child nodeId="node-0x7889e10" />
+    </children>
+  </item>
+  <item nodeId="node-0x7889e10">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">(first opening Practice Room Door)
+It seems to be locked.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="13">YES</temporary>
+    <children>
+      <child nodeId="node-0xbb315f0" />
+    </children>
+  </item>
+  <item nodeId="node-0xbb315f0">
+    <command xml:space="preserve">x dresser</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="6">YES</temporary>
+    <children>
+      <child nodeId="node-0x3004f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x3004f0">
+    <command xml:space="preserve">open dresser</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="6">YES</temporary>
+    <children>
+      <child nodeId="node-0x305700" />
+    </children>
+  </item>
+  <item nodeId="node-0x305700">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Practice Room
+A small wooden dresser stands in the corrner of the room. A couple of loose pieces of paper rest on top of it along with several other bits and bobs.
+
+You quickly scan the contense of the papers. They are flyers for an old recital performed here.
+
+ &quot;Recital&quot;
+
+You can also see Practice Piano here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="5">YES</temporary>
+  </item>
+  <item nodeId="node-0x43d440">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 West Corridor
@@ -35,18 +108,18 @@ You can also see Vending Machine and Desk here.
     <changed>YES</changed>
     <temporary score="12">YES</temporary>
     <children>
-      <child nodeId="node-0x88b8690" />
-      <child nodeId="node-0x76edf70" />
-      <child nodeId="node-0x76e5920" />
+      <child nodeId="node-0x456d80" />
+      <child nodeId="node-0x456ce0" />
+      <child nodeId="node-0x456c90" />
     </children>
   </item>
-  <item nodeId="node-0x76e5920">
+  <item nodeId="node-0x456c90">
     <command xml:space="preserve">x woman</command>
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="11">YES</temporary>
   </item>
-  <item nodeId="node-0x76edf70">
+  <item nodeId="node-0x456ce0">
     <command xml:space="preserve">x attendant</command>
     <result xml:space="preserve">You see nothing special about Attendant.
 
@@ -55,10 +128,10 @@ You can also see Vending Machine and Desk here.
     <changed>YES</changed>
     <temporary score="10">YES</temporary>
     <children>
-      <child nodeId="node-0x7656590" />
+      <child nodeId="node-0x456d30" />
     </children>
   </item>
-  <item nodeId="node-0x7656590">
+  <item nodeId="node-0x456d30">
     <command xml:space="preserve">x woman</command>
     <result xml:space="preserve">You see nothing special about Attendant.
 
@@ -67,7 +140,7 @@ You can also see Vending Machine and Desk here.
     <changed>YES</changed>
     <temporary score="9">YES</temporary>
   </item>
-  <item nodeId="node-0x88b8690">
+  <item nodeId="node-0x456d80">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">
 Bathroom
@@ -77,10 +150,10 @@ Bathroom
     <changed>YES</changed>
     <temporary score="7">YES</temporary>
     <children>
-      <child nodeId="node-0x76f9830" />
+      <child nodeId="node-0x456dd0" />
     </children>
   </item>
-  <item nodeId="node-0x76f9830">
+  <item nodeId="node-0x456dd0">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">
 West Corridor
@@ -90,10 +163,10 @@ West Corridor
     <changed>YES</changed>
     <temporary score="7">YES</temporary>
     <children>
-      <child nodeId="node-0x76dd860" />
+      <child nodeId="node-0x456ea0" />
     </children>
   </item>
-  <item nodeId="node-0x76dd860">
+  <item nodeId="node-0x456ea0">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">
 Audition Room
@@ -103,10 +176,10 @@ Audition Room
     <changed>YES</changed>
     <temporary score="7">YES</temporary>
     <children>
-      <child nodeId="node-0x76f1760" />
+      <child nodeId="node-0x456ef0" />
     </children>
   </item>
-  <item nodeId="node-0x76f1760">
+  <item nodeId="node-0x456ef0">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">
 West Corridor
@@ -116,10 +189,10 @@ West Corridor
     <changed>YES</changed>
     <temporary score="7">YES</temporary>
     <children>
-      <child nodeId="node-0x763cfc0" />
+      <child nodeId="node-0x456f40" />
     </children>
   </item>
-  <item nodeId="node-0x763cfc0">
+  <item nodeId="node-0x456f40">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 East Corridor
