@@ -128,9 +128,19 @@ Cold Water handle is scenery. It is in Bathroom. The description is "This rusted
 
 Toilet Stalls is a scenery. It is in Bathroom. The description is "You find nothing remarkable about them."
 
-Practice Room is a room. It is east of Practice Room Door. The description is "As you enter the Practice room only two pieces of furnature stand out to you. One is a black piano with a seet before it on one wall of the room and the other a small dresser. The the hallway is back to the west."
+Practice Room is a room. The description is "As you enter the Practice room only two pieces of furnature stand out to you. One is a black piano with a seet before it on one wall of the room and the other a small dresser. The the hallway is back to the west."
 
-Practice Room Door is a door and east of East Corridor and west of the Practice Room. It is undescribed. The Practice Room Door is locked and lockable. The Music Room Key unlocks the Practice Room Door.
+Practice Room Door is south of the East Corridor and north of the Practice Room. Practice Room Door is a door. Practice Room Door is scenery. Practice Room Door is lockable and locked. The Music Room Key unlocks the Practice Room Door.
+
+Before going through the Practice Room Door:
+	if the Practice Room Door is closed:
+		if the Practice Room Door is not locked:
+			say "(first opening the Practice Room Door)[paragraph break]";
+			now the Practice Room Door is open;
+		otherwise if the player carries the The Music Room Key:
+			say "(first unlocking the Practice Room Door with The Music Room Key, then opening the door [paragraph break]";
+			now the Practice Room Door is unlocked;
+			now the Practice Room Door is open.
 
 Practice Piano is scenery. It is in Practice Room. The description is "A stand up piano has been placed infront of a small window. The piano is bare save for a golden inscription. A piano seat stands before the piano."
 
@@ -148,9 +158,21 @@ Understand "Loose pieces of paper" as flyer.
 
 Random Objects is scenery. It is in Practice Room. The description is "An old wooden clock, black and white photograph, and few coins lie scattered accross the top of the dresser. However, nothing catches your eye as being particularly intresting."
 
-Music Library is a room. It is north of Music Library Door. The description is "Rows and rows of sheet music fill this room lining the walls and streaching from floor to celling. However, only shelf holds piano music."
+Music Library is a room. The description is "Rows and rows of sheet music fill this room lining the walls and streaching from floor to celling. However, only shelf holds piano music."
 
-Music Library Door is a door. It is north of East Corridor and south of Music Library. It is undescribed. [The Library Door is locked and lockable.] The Library Key unlocks the Music Library Door. 
+Music Library Door is north of the East Corridor and south of the Music Library. Music Library Door is a door. Music Library Door is scenery. Music Library Door is lockable and locked. The Library key unlocks the Music Library Door.
+
+Before going through the Music Library Door:
+	if the Music Library Door is closed:
+		if the Music Library Door is not locked:
+			say "(first opening the Music Library Door)[paragraph break]";
+			now the Music Library Door is open;
+		otherwise if the player carries the The Library Key:
+			say "(first unlocking the Music Library Door with The Library Key, then opening the door [paragraph break]";
+			now the Music Library Door is unlocked;
+			now the Music Library Door is open.
+
+[taken from http://www.musicwords.net/if/InformHandbook.pdf]
 
 Shelf is a container. It is in Music Library. The description is "Of the hundreds of pieces here you only reconize a few Ravel's Piano Concerto in g major, Beethoven's Fifth Piano Concerto in e-flat major, Prokofiev's second Piano Concerto, and Twinkle Twinkle Little Star."
 
