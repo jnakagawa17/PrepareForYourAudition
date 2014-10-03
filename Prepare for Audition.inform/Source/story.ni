@@ -85,7 +85,7 @@ Desk is scenery. It is in West Corridor. The description is "You examine the des
 
 Clipboard is scenery. It is in West Corridor. The description is "'Instrument Storage Sheet'[paragraph break] Jonathan Nakagawa , 10, Cello[paragraph break] Andrew Winnicki   , 10, Violin[paragraph break] Christopher Inouye, 10, Violin"
 
-Attendant is a woman in West Corridor. Understand "woman" as Attendant. It is undescribed. Attendant carries Library Key. "Hello, you must be here for your piano audition. The reviewers are ready for you. Lets get this over with quickly I really am starving." 
+Attendant is a woman in West Corridor. Understand "woman" as Attendant. Attendant carries Library Key. "Hello, you must be here for your piano audition. The reviewers are ready for you. Lets get this over with quickly I really am starving." 
 
 Instead of talking to Attendant:
 say "[one of]'I am so increably hungry right now.'[or]'Are you ready for your audition?'[or]'Good luck with your audition'[stopping]".
@@ -116,7 +116,32 @@ Instead of giving Peanut to Apple:
 
 East Corridor is a room. The description is "You can hear your own foot falls as you walk down a stone walk way. An older man sits hunched over on a cushioned bench cleaning his finger nails. To the north is the Music Library where all sorts of sheet music is kept. To your east is a Practice Room. Both rooms are locked because its after hours."
 
-Pianist is a man in East Corridor. Pianist carries The Music Room Key.
+Pianist is a man in East Corridor. Pianist carries The Music Room Key. It is undescribed.
+
+Understand "man" as Pianist
+
+Instead of talking to Pianist:
+	if player carries Sheet Music of Ravel's Piano Concerto in g major:
+		say "What's that you have there. Oh Ravel yes that it a pretty little piece. I suppose I could help you clean up your technique if you want. Here's the key to the practice room. I'll meet you inside.";
+		move The Music Room Key to player;
+		move Pianist to Practice Room;
+	otherwise:
+		if player carries Sheet Music of Beethoven's Fifth Piano Concerto in e-flat major:
+			say "What's that you have there. Oh Beethoven yes that it a impressive piece. I suppose I could help you clean up your technique if you want. Here's the key to the practice room. I'll meet you inside.";
+			move The Music Room Key to player;
+			move Pianist to Practice Room;
+		otherwise:
+			if player carries Sheet Music of Prokofiev's second Piano Concerto:
+				say "What's that you have there. Prokofiev! There is no way you will be able to play that without my help. Here's the key to the practice room. I'll meet you inside.";
+				move The Music Room Key to player;
+				move Pianist to Practice Room;
+			otherwise:
+				if player carries Sheet Music of Twinkle Twinkle Little Star:
+					say "What's that you have there. Twinkle Twinkle! Finally someone who understands that the greatest beauty comes from simplicity. Here's the key to the practice room. I'll meet you inside.";
+					move The Music Room Key to player;
+					move Pianist to Practice Room;
+				otherwise:
+					say "[one of]'Why does it have to be so damn hot all the time.'[or]'Everybody is useless these days?'[or]'They just do not understand'[stopping]".
 
 Bathroom is a room. It is south of West Corridor. The description is "Glancing around you see a few empty stalls, a row of sinks, and a doorway leading back the way you came to the north."
 
@@ -128,7 +153,7 @@ Cold Water handle is scenery. It is in Bathroom. The description is "This rusted
 
 Toilet Stalls is a scenery. It is in Bathroom. The description is "You find nothing remarkable about them."
 
-Practice Room is a room. The description is "As you enter the Practice room only two pieces of furnature stand out to you. One is a black piano with a seet before it on one wall of the room and the other a small dresser. The the hallway is back to the west."
+Practice Room is a room. The description is "As you enter the Practice room only two pieces of furnature stand out to you. One is a black piano with a seat before it on one wall of the room and the other a small dresser. The the hallway is back to the west."
 
 Practice Room Door is south of the East Corridor and north of the Practice Room. Practice Room Door is a door. Practice Room Door is scenery. Practice Room Door is lockable and locked. The Music Room Key unlocks the Practice Room Door.
 
@@ -148,7 +173,22 @@ Small window is scenery. It is in Practice Room. The description is "A small shu
 
 Golden Inscription is scenery. The description is "The golden lettering reads 'Baldwin Piano'"
 
-Piano Seat is a supporter. It is in Practice Room. It is undescribed. The description is "A black leather seat rests before the piano."
+Piano Seat is an open enterable scenery container. It is in Practice Room. It is undescribed. The description is "A black leather seat rests before the piano."
+
+After opening Piano seat:
+	if player carries Sheet Music of Twinkle Twinkle Little Star: 
+		say "You begin to practice working on all the most difficult sections of the piece. As you work away for more than half an hour your hands begin to grow cold.";
+	otherwise:
+		if player carries Sheet Music of Prokofiev's second Piano Concerto: 
+			say "You begin to practice working on all the most difficult sections of the piece. As you work away for more than half an hour your hands begin to grow cold.";
+			increase score by 5;
+		otherwise:
+			if player carries Sheet Music of Beethoven's Fifth Piano Concerto in e-flat major: 
+				say "You begin to practice working on all the most difficult sections of the piece. As you work away for more than half an hour your hands begin to grow cold.";
+				increase score by 2;
+			otherwise:
+				if player carries Sheet Music of Ravel's Piano Concerto in g major: 
+					say "You begin to practice working on all the most difficult sections of the piece. As you work away for more than half an hour your hands begin to grow cold.";
 
 Small Dresser is a container. It is in Practice Room. It is undescribed. The description is "A small wooden dresser stands in the corrner of the room. A couple of loose pieces of paper rest on top of it along with several other random objects."
 
@@ -157,6 +197,22 @@ Flyer is a thing. It is in Practice Room. It is undescribed. The description is 
 Understand "Loose pieces of paper" as flyer. 
 
 Random Objects is scenery. It is in Practice Room. The description is "An old wooden clock, black and white photograph, and few coins lie scattered accross the top of the dresser. However, nothing catches your eye as being particularly intresting."
+
+Instead of going north:
+	If player is in Bathroom:
+		move player to West Corridor;
+	otherwise:
+		If player is in West Corridor:
+			Move player to Audition Room;
+		otherwise:
+			If player is in East corridor:
+				If player has Library Key:
+					move player to Music Library;
+			otherwise:
+				If player is in Practice Room:
+					If Pianist is in Practice Room:
+						say "'Well if you are leaving so am I'";
+						move Pianist to East Corridor;
 
 Music Library is a room. The description is "Rows and rows of sheet music fill this room lining the walls and streaching from floor to celling. However, only shelf holds piano music."
 
@@ -176,6 +232,50 @@ Before going through the Music Library Door:
 
 Shelf is a container. It is in Music Library. The description is "Of the hundreds of pieces here you only reconize a few Ravel's Piano Concerto in g major, Beethoven's Fifth Piano Concerto in e-flat major, Prokofiev's second Piano Concerto, and Twinkle Twinkle Little Star."
 
+Sheet Music of Ravel's Piano Concerto in g major is a thing. It is in shelf. It is undescribed. The description is "Ravel's piano concerto is on the easier side of piano concertos."
+
+Sheet Music of Beethoven's Fifth Piano Concerto in e-flat major is a thing. It is in shelf. It is undescribed. The description is "Beethoven's fifth piano concerto is one of the most impressive piano concertos ever written. It requires a fair amount of competency in playing the piano to be able to play it."
+
+Sheet Music of Prokofiev's second Piano Concerto is a thing. It is in shelf. It is undescribed. The description is "Prokofiev's second piano concerto is one of if not the hardest piano concerto ever written. It is nearly impossible to play it well."
+
+Sheet Music of Twinkle Twinkle Little Star is a thing. It is in shelf. It is undescribed. The description is "The good old classic played by five year olds every where around the globe."
+
+Instead of taking Sheet Music of Ravel's Piano Concerto in g major:
+	move Sheet Music of Ravel's Piano Concerto in g major to player;
+	move Sheet Music of Beethoven's Fifth Piano Concerto in e-flat major to hole;
+	move Sheet Music of Prokofiev's second Piano Concerto to hole;
+	move Sheet Music of Twinkle Twinkle Little Star to hole;
+	say "Its a bit simplistic but you are sure that you will be able to proform this piece well.";
+	
+Instead of taking Sheet Music of Beethoven's Fifth Piano Concerto in e-flat major:
+	move Sheet Music of Ravel's Piano Concerto in g major to hole;
+	move Sheet Music of Beethoven's Fifth Piano Concerto in e-flat major to player;
+	move Sheet Music of Prokofiev's second Piano Concerto to hole;
+	move Sheet Music of Twinkle Twinkle Little Star to hole;
+	say "A very grandious and impressive to say the least there is great potential to impress the reviewers with this selection.";
+	
+Instead of taking Sheet Music of Prokofiev's second Piano Concerto:
+	move Sheet Music of Ravel's Piano Concerto in g major to hole;
+	move Sheet Music of Beethoven's Fifth Piano Concerto in e-flat major to hole;
+	move Sheet Music of Prokofiev's second Piano Concerto to player;
+	move Sheet Music of Twinkle Twinkle Little Star to hole;
+	say "Such a difficult piece will be sure to awe the reviewers if you can pull it off.";
+	
+Instead of taking Sheet Music of Twinkle Twinkle Little Star:
+	move Sheet Music of Ravel's Piano Concerto in g major to hole;
+	move Sheet Music of Beethoven's Fifth Piano Concerto in e-flat major to hole;
+	move Sheet Music of Prokofiev's second Piano Concerto to hole;
+	move Sheet Music of Twinkle Twinkle Little Star to player;
+	say "You are not sure what possesed you to take this piece over all the other great works surrounding you but you might as well make the best of it.";
+
+After taking Sheet Music of Ravel's Piano Concerto in g major when the Sheet Music of Ravel's Piano Concerto in g major is not handled:
+increase score by 2;
+
+After taking Sheet Music of Beethoven's Fifth Piano Concerto in e-flat major when the Sheet Music of Beethoven's Fifth Piano Concerto in e-flat major is not handled:
+increase score by 1;
+
+After taking Sheet Music of Twinkle Twinkle Little Star when the Sheet Music of Twinkle Twinkle Little Star is not handled:
+decrease score by 100;		
 
 [Taken from http://www.musicwords.net/if/InformHandbook.pdf Chapter 7]
 
@@ -186,6 +286,12 @@ increase score by 1;
 
 Audition Room is a room. It is north of West Corridor .
 
-Audition Piano is a thing. It is in Audition Room.
+Grand Piano is a thing. It is in Audition Room. "A beautiful sleek grand piano is centered in middle of the stage facing towards the audiance section."  
 
-Hole is a room.
+Piano Stool is an open enterable scenery container. It is in Audition Room. It is undescribed. The description is "A leather upholstered stool stands infront of the grand piano."
+
+[After sitting on Piano Stool:]
+	
+Susan Wong is a woman in Audition Room.
+
+Hole is a container. It is locked and lockable.
