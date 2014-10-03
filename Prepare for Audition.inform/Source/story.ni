@@ -286,12 +286,34 @@ increase score by 1;
 
 Audition Room is a room. It is north of West Corridor .
 
+After entering Audition room for the first time:
+	if player carries flyer:
+		say  "'Hello, I'm Susan Wong I will be assessing your proformance today. Just head up on the stage and begin when you are ready.' You don't know why but you get the feeling you heard her name before.";
+	otherwise:
+		say  "Hello, I'm Susan Wong I will be assessing your proformance today. Just head up on the stage and begin when you are ready.";
+
 Grand Piano is a thing. It is in Audition Room. "A beautiful sleek grand piano is centered in middle of the stage facing towards the audiance section."  
 
 Piano Stool is an open enterable scenery container. It is in Audition Room. It is undescribed. The description is "A leather upholstered stool stands infront of the grand piano."
 
 [After sitting on Piano Stool:]
 	
-Susan Wong is a woman in Audition Room.
+Susan Wong is a woman in Audition Room. It is undescribed. The description is "Susan Wong is a rather short black haired Asain woman. She is currently sitting in chair watching and wating of you to head up to the stage."
+
+Instead of talking to Susan Wong:
+	say "[one of]'We are ready when you are.'[or]'Feel free to start.'[stopping]".
+
+Every turn:
+	if the player is in Piano Stool:
+		if score is 11:
+			end the story finally saying "Player Wins";
+		otherwise:
+			if score is greater than 5:
+				end the story finally saying "Player Wins";
+			otherwise:
+				if score is greater than 1:
+					end the story finally saying "Player Wins";
+				otherwise:
+					end the story finally saying "Player Wins";
 
 Hole is a container. It is locked and lockable.

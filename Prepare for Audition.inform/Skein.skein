@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Skein rootNode="node-0x4e2950" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x4e2950" />
+  <activeNode nodeId="node-0x147819c0" />
   <item nodeId="node-0x4e2950">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
@@ -11,7 +11,7 @@ Today is the day! More than a decade of work has led you to this one moment. You
 
 Prepare for Audition
 An Interactive Fiction by Jonathan Nakagawa
-Release 1 / Serial number 141002 / Inform 7 build 6L38 (I6/v6.33 lib 6/12N) SD
+Release 1 / Serial number 141003 / Inform 7 build 6L38 (I6/v6.33 lib 6/12N) SD
 
 West Corridor
 Beside you here the humm of a black vending machine. Behind you the the hallway carries on the east. To the south is a bathroom. Infront of you is a small reception desk with a clipboard resting on it and the attendant sitting behind it looking up at you expectantly.
@@ -21,13 +21,13 @@ Hello, you must be here for your piano audition. The reviewers are ready for you
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="131">NO</temporary>
+    <temporary score="136">NO</temporary>
     <children>
       <child nodeId="node-0x1077f440" />
       <child nodeId="node-0x4e29a0" />
       <child nodeId="node-0xf673040" />
       <child nodeId="node-0x4e29f0" />
-      <child nodeId="node-0x4f5cb0" />
+      <child nodeId="node-0x1477fb70" />
       <child nodeId="node-0xec89860" />
       <child nodeId="node-0xf45b3f0" />
     </children>
@@ -525,18 +525,40 @@ It seems to be locked.
     <changed>YES</changed>
     <temporary score="37">YES</temporary>
   </item>
-  <item nodeId="node-0x4f5cb0">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">
-West Corridor
-Test
+  <item nodeId="node-0x1477fb70">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Audition Room
+A beautiful sleek grand piano is centered in middle of the stage facing towards the audiance section.
 
-You can also see Vending Machine and Desk here.
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="136">YES</temporary>
+    <children>
+      <child nodeId="node-0x147819c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x147819c0">
+    <command xml:space="preserve">sit on piano stool</command>
+    <result xml:space="preserve">You get into Piano Stool.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="12">YES</temporary>
+    <temporary score="135">YES</temporary>
+    <children>
+      <child nodeId="node-0x14baded0" />
+    </children>
+  </item>
+  <item nodeId="node-0x14baded0">
+    <command xml:space="preserve">x piano</command>
+    <result xml:space="preserve">(Grand Piano)
+You see nothing special about Grand Piano.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="133">YES</temporary>
   </item>
   <item nodeId="node-0x4e29f0">
     <command xml:space="preserve">e</command>
@@ -582,18 +604,6 @@ You can see Practice Room Door here.
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="14">YES</temporary>
-    <children>
-      <child nodeId="node-0xcdd7cf0" />
-    </children>
-  </item>
-  <item nodeId="node-0xcdd7cf0">
-    <command xml:space="preserve">x bits</command>
-    <result xml:space="preserve">An old wooden clock, black and white photograph, and few coins lie scattered accross the top of the dresser. However, nothing catches your eye as being particularly intresting.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="13">YES</temporary>
   </item>
   <item nodeId="node-0x4e2ab0">
     <command xml:space="preserve">x flyer</command>
