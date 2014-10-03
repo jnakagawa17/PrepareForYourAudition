@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <Skein rootNode="node-0x43d3f0" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x7889e10" />
+  <activeNode nodeId="node-0xbb345c0" />
   <item nodeId="node-0x43d3f0">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
 
 
-Today is the day! More than a decade of work has all led you to this one moment. You steadly trod into the music building supressing the desire to bound forward wildly screamming from fear and excitement. You pass through the east side of a hallway stopping before the attendant&apos;s desk.
+Today is the day! More than a decade of work has led you to this one moment. You steadly trod into the music building supressing the desire to bound forward wildly screamming from fear and excitement. You pass through the east side of a hallway stopping before the attendant&apos;s desk.
 
 Prepare for Audition
 An Interactive Fiction by Jonathan Nakagawa
@@ -16,16 +16,26 @@ Release 1 / Serial number 141002 / Inform 7 build 6L38 (I6/v6.33 lib 6/12N) SD
 West Corridor
 Test
 
-You can also see Vending Machine and Desk here.
+You can also see Desk here.
 
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="14">NO</temporary>
+    <temporary score="25">NO</temporary>
     <children>
       <child nodeId="node-0x43d440" />
       <child nodeId="node-0xbb27960" />
+      <child nodeId="node-0x4d8e00" />
     </children>
+  </item>
+  <item nodeId="node-0x4d8e00">
+    <command xml:space="preserve">x vending machine</command>
+    <result xml:space="preserve">A large, black, oblong metal box is pressed up against the wall humming softly. It is filled with various food products.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="14">YES</temporary>
   </item>
   <item nodeId="node-0xbb27960">
     <command xml:space="preserve">e</command>
@@ -36,7 +46,7 @@ You can see Library Door, Practice Room Door and Pianist here.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="14">YES</temporary>
+    <temporary score="25">YES</temporary>
     <children>
       <child nodeId="node-0x7889e10" />
     </children>
@@ -44,24 +54,47 @@ You can see Library Door, Practice Room Door and Pianist here.
   <item nodeId="node-0x7889e10">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">(first opening Practice Room Door)
-It seems to be locked.
+
+Practice Room
+A black leather seat rests before the piano.
+
+You can also see Practice Room Door here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="25">YES</temporary>
+    <children>
+      <child nodeId="node-0xbb315f0" />
+      <child nodeId="node-0xc03a950" />
+    </children>
+  </item>
+  <item nodeId="node-0xc03a950">
+    <command xml:space="preserve">x flyer</command>
+    <result xml:space="preserve">An old wooden clock, black and white photograph, and few coins lie scattered accross the top of the dresser. However, nothing catches your eye as being particularly intresting.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="13">YES</temporary>
+    <temporary score="25">YES</temporary>
     <children>
-      <child nodeId="node-0xbb315f0" />
+      <child nodeId="node-0xbb345c0" />
     </children>
+  </item>
+  <item nodeId="node-0xbb345c0">
+    <command xml:space="preserve">x bits and bobs</command>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="24">YES</temporary>
   </item>
   <item nodeId="node-0xbb315f0">
     <command xml:space="preserve">x dresser</command>
-    <result xml:space="preserve">You can&apos;t see any such thing.
+    <result xml:space="preserve">You see nothing special about Dresser.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="6">YES</temporary>
+    <temporary score="20">YES</temporary>
     <children>
       <child nodeId="node-0x3004f0" />
     </children>
