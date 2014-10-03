@@ -143,7 +143,7 @@ Instead of talking to Pianist:
 				otherwise:
 					say "[one of]'Why does it have to be so damn hot all the time.'[or]'Everybody is useless these days?'[or]'They just do not understand'[stopping]".
 
-Bathroom is a room. It is south of West Corridor. The description is "Glancing around you see a few empty stalls, a row of sinks, and a doorway leading back the way you came to the north."
+[Bathroom is a room. It is south of West Corridor. The description is "Glancing around you see a few empty stalls, a row of sinks, and a doorway leading back the way you came to the north."
 
 Row of Sinks is scenery. It is in Bathroom. The description is "The sinks are old and flaked from years of use but they are still functional. Each sink has a rusted hot and cold water handle."
 
@@ -151,7 +151,12 @@ Hot Water handle is scenery. It is in Bathroom. The description is "This rusted 
 
 Cold Water handle is scenery. It is in Bathroom. The description is "This rusted handle controls the sinks cold water."
 
-Toilet Stalls is a scenery. It is in Bathroom. The description is "You find nothing remarkable about them."
+Instead of "Turn on Cold Water":
+	say "Your turn the rusty handle hearing a swosh as a torrent of cold water steams out of the fosset. You wincing at the tingle of the cold water wash your hands.";
+	After "Turn on Cold Water" for the first time:
+		decrease score by 1;
+
+Toilet Stalls is a scenery. It is in Bathroom. The description is "You find nothing remarkable about them."]
 
 Practice Room is a room. The description is "As you enter the Practice room only two pieces of furnature stand out to you. One is a black piano with a seat before it on one wall of the room and the other a small dresser. The the hallway is back to the west."
 
@@ -177,18 +182,19 @@ Piano Seat is an open enterable scenery container. It is in Practice Room. It is
 
 After opening Piano seat:
 	if player carries Sheet Music of Twinkle Twinkle Little Star: 
-		say "You begin to practice working on all the most difficult sections of the piece. As you work away for more than half an hour your hands begin to grow cold.";
+		say "You begin to practice working on all the most difficult sections of the piece. As you work away for more than half an hour you become noticably better at the piece.";
 	otherwise:
 		if player carries Sheet Music of Prokofiev's second Piano Concerto: 
-			say "You begin to practice working on all the most difficult sections of the piece. As you work away for more than half an hour your hands begin to grow cold.";
-			increase score by 5;
+			say "You begin to practice working on all the most difficult sections of the piece. As you work away for more than half an hour you become noticably better at the piece.";
+			increase score by 6;
 		otherwise:
 			if player carries Sheet Music of Beethoven's Fifth Piano Concerto in e-flat major: 
-				say "You begin to practice working on all the most difficult sections of the piece. As you work away for more than half an hour your hands begin to grow cold.";
-				increase score by 2;
+				say "You begin to practice working on all the most difficult sections of the piece. As you work away for more than half an hour you become noticably better at the piece.";
+				increase score by 3;
 			otherwise:
 				if player carries Sheet Music of Ravel's Piano Concerto in g major: 
-					say "You begin to practice working on all the most difficult sections of the piece. As you work away for more than half an hour your hands begin to grow cold.";
+					say "You begin to practice working on all the most difficult sections of the piece. As you work away for more than half an hour you become noticably better at the piece.";
+					increase score by 1;
 
 Small Dresser is a container. It is in Practice Room. It is undescribed. The description is "A small wooden dresser stands in the corrner of the room. A couple of loose pieces of paper rest on top of it along with several other random objects."
 
@@ -199,20 +205,21 @@ Understand "Loose pieces of paper" as flyer.
 Random Objects is scenery. It is in Practice Room. The description is "An old wooden clock, black and white photograph, and few coins lie scattered accross the top of the dresser. However, nothing catches your eye as being particularly intresting."
 
 Instead of going north:
-	If player is in Bathroom:
-		move player to West Corridor;
+	If player is in West Corridor:
+		Move player to Audition Room;
 	otherwise:
-		If player is in West Corridor:
-			Move player to Audition Room;
-		otherwise:
-			If player is in East corridor:
-				If player has Library Key:
-					move player to Music Library;
+		If player is in East corridor:
+			If player has Library Key:
+				move player to Music Library;
 			otherwise:
 				If player is in Practice Room:
 					If Pianist is in Practice Room:
 						say "'Well if you are leaving so am I'";
 						move Pianist to East Corridor;
+
+	[If player is in Bathroom:
+		move player to West Corridor;
+	otherwise:]
 
 Music Library is a room. The description is "Rows and rows of sheet music fill this room lining the walls and streaching from floor to celling. However, only shelf holds piano music."
 
@@ -306,14 +313,14 @@ Instead of talking to Susan Wong:
 Every turn:
 	if the player is in Piano Stool:
 		if score is 11:
-			end the story finally saying "Player Wins";
+			end the story finally saying "test 1";
 		otherwise:
 			if score is greater than 5:
-				end the story finally saying "Player Wins";
+				end the story finally saying "test 2";
 			otherwise:
 				if score is greater than 1:
-					end the story finally saying "Player Wins";
+					end the story finally saying "test 3";
 				otherwise:
-					end the story finally saying "Player Wins";
+					end the story finally saying "test 4";
 
 Hole is a container. It is locked and lockable.

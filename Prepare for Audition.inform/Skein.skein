@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Skein rootNode="node-0x4e2950" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x147819c0" />
+  <activeNode nodeId="node-0x4e2950" />
   <item nodeId="node-0x4e2950">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
@@ -21,13 +21,13 @@ Hello, you must be here for your piano audition. The reviewers are ready for you
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="136">NO</temporary>
+    <temporary score="148">NO</temporary>
     <children>
       <child nodeId="node-0x1077f440" />
-      <child nodeId="node-0x4e29a0" />
       <child nodeId="node-0xf673040" />
       <child nodeId="node-0x4e29f0" />
       <child nodeId="node-0x1477fb70" />
+      <child nodeId="node-0x14b1c7e0" />
       <child nodeId="node-0xec89860" />
       <child nodeId="node-0xf45b3f0" />
     </children>
@@ -525,6 +525,167 @@ It seems to be locked.
     <changed>YES</changed>
     <temporary score="37">YES</temporary>
   </item>
+  <item nodeId="node-0x14b1c7e0">
+    <command xml:space="preserve">buy oreo</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="148">YES</temporary>
+    <children>
+      <child nodeId="node-0x1477fce0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1477fce0">
+    <command xml:space="preserve">buy oreos</command>
+    <result xml:space="preserve">A package of oreos pops out of the machine with a satisfying cha-ching.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="148">YES</temporary>
+    <children>
+      <child nodeId="node-0x171a15a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x171a15a0">
+    <command xml:space="preserve">eat oreo</command>
+    <result xml:space="preserve">[Your score has just gone up by one point.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="148">YES</temporary>
+    <children>
+      <child nodeId="node-0x147952c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x147952c0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Audition Room
+A beautiful sleek grand piano is centered in middle of the stage facing towards the audiance section.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="148">YES</temporary>
+    <children>
+      <child nodeId="node-0x14b6f7d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x14b6f7d0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+West Corridor
+Beside you here the humm of a black vending machine. Behind you the the hallway carries on the east. To the south is a bathroom. Infront of you is a small reception desk with a clipboard resting on it and the attendant sitting behind it looking up at you expectantly.
+
+Hello, you must be here for your piano audition. The reviewers are ready for you. Lets get this over with quickly I really am starving.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="148">YES</temporary>
+    <children>
+      <child nodeId="node-0x13ded260" />
+    </children>
+  </item>
+  <item nodeId="node-0x13ded260">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Bathroom
+Glancing around you see a few empty stalls, a row of sinks, and a doorway leading back the way you came to the north.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="148">YES</temporary>
+    <children>
+      <child nodeId="node-0x13d8dd80" />
+    </children>
+  </item>
+  <item nodeId="node-0x13d8dd80">
+    <command xml:space="preserve">x sinks</command>
+    <result xml:space="preserve">The sinks are old and flaked from years of use but they are still functional. Each sink has a rusted hot and cold water handle.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="148">YES</temporary>
+    <children>
+      <child nodeId="node-0x14768c30" />
+    </children>
+  </item>
+  <item nodeId="node-0x14768c30">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">West Corridor
+Beside you here the humm of a black vending machine. Behind you the the hallway carries on the east. To the south is a bathroom. Infront of you is a small reception desk with a clipboard resting on it and the attendant sitting behind it looking up at you expectantly.
+
+Hello, you must be here for your piano audition. The reviewers are ready for you. Lets get this over with quickly I really am starving.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="148">YES</temporary>
+    <children>
+      <child nodeId="node-0x10106870" />
+    </children>
+  </item>
+  <item nodeId="node-0x10106870">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Audition Room
+A beautiful sleek grand piano is centered in middle of the stage facing towards the audiance section.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="148">YES</temporary>
+    <children>
+      <child nodeId="node-0x13d216f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x13d216f0">
+    <command xml:space="preserve">sit of piano stool</command>
+    <result xml:space="preserve">I didn&apos;t understand that sentence.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="148">YES</temporary>
+    <children>
+      <child nodeId="node-0x14be69a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x14be69a0">
+    <command xml:space="preserve">sit on piano stoo;</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="148">YES</temporary>
+    <children>
+      <child nodeId="node-0x107153e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x107153e0">
+    <command xml:space="preserve">sit on piano stool</command>
+    <result xml:space="preserve">You get into Piano Stool.
+
+
+
+    *** Player Wins ***
+
+
+In that game you scored 1 out of a possible 11, in 9 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="147">YES</temporary>
+  </item>
   <item nodeId="node-0x1477fb70">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Audition Room
@@ -542,6 +703,7 @@ A beautiful sleek grand piano is centered in middle of the stage facing towards 
     <command xml:space="preserve">sit on piano stool</command>
     <result xml:space="preserve">You get into Piano Stool.
 
+test
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
@@ -574,63 +736,7 @@ You can hear your own foot falls as you walk down a stone walk way. An older man
       <child nodeId="node-0xec3ad90" />
       <child nodeId="node-0xa9a9090" />
       <child nodeId="node-0xf48f1d0" />
-      <child nodeId="node-0x4e2a40" />
     </children>
-  </item>
-  <item nodeId="node-0x4e2a40">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">(first opening Practice Room Door)
-
-Practice Room
-As you enter the Practice room only two pieces of furnature stand out to you. One is a black piano with a seet before it on one wall of the room and the other a small dresser. The the hallway is back to the west.
-
-You can see Practice Room Door here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="17">YES</temporary>
-    <children>
-      <child nodeId="node-0x4e2b90" />
-      <child nodeId="node-0x4e2ab0" />
-      <child nodeId="node-0x7ab01f0" />
-    </children>
-  </item>
-  <item nodeId="node-0x7ab01f0">
-    <command xml:space="preserve">x bits and bobs</command>
-    <result xml:space="preserve">You can&apos;t use multiple objects with that verb.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="14">YES</temporary>
-  </item>
-  <item nodeId="node-0x4e2ab0">
-    <command xml:space="preserve">x flyer</command>
-    <result xml:space="preserve">An old wooden clock, black and white photograph, and few coins lie scattered accross the top of the dresser. However, nothing catches your eye as being particularly intresting.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="25">YES</temporary>
-    <children>
-      <child nodeId="node-0x4e2b20" />
-    </children>
-  </item>
-  <item nodeId="node-0x4e2b20">
-    <command xml:space="preserve">x bits and bobs</command>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="24">YES</temporary>
-  </item>
-  <item nodeId="node-0x4e2b90">
-    <command xml:space="preserve">x dresser</command>
-    <result xml:space="preserve">You see nothing special about Dresser.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="20">YES</temporary>
   </item>
   <item nodeId="node-0xf48f1d0">
     <command xml:space="preserve">n</command>
@@ -1184,15 +1290,6 @@ You can see Pianist here.
     <changed>YES</changed>
     <temporary score="26">YES</temporary>
   </item>
-  <item nodeId="node-0x4e29a0">
-    <command xml:space="preserve">x vending machine</command>
-    <result xml:space="preserve">A large, black, oblong metal box is pressed up against the wall humming softly. It is filled with various food products.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="14">YES</temporary>
-  </item>
   <item nodeId="node-0x1077f440">
     <command xml:space="preserve">u</command>
     <result xml:space="preserve">You can&apos;t go that way.
@@ -1201,19 +1298,5 @@ You can see Pianist here.
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="21">YES</temporary>
-    <children>
-      <child nodeId="node-0xf6f72e0" />
-    </children>
-  </item>
-  <item nodeId="node-0xf6f72e0">
-    <command xml:space="preserve">i</command>
-    <result xml:space="preserve">You are carrying:
-  Two Quarter
-  Dollar
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="20">YES</temporary>
   </item>
 </Skein>
