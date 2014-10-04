@@ -1,27 +1,27 @@
 <?xml version="1.0"?>
 <Skein rootNode="node-0x4e2950" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x4e2950" />
+  <activeNode nodeId="node-0x147819c0" />
   <item nodeId="node-0x4e2950">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
 
 
-Today is the day! More than a decade of work has led you to this one moment. You steadly trod into the music building supressing the desire to bound forward wildly screamming from fear and excitement. You pass through the east side of a hallway stopping before the attendant&apos;s desk.
+Today is the day! More than a decade of work has led you to this one moment. You steadily trod into the music building suppressing the desire to bound forward wildly screaming from fear and excitement. You pass through the east side of a hallway stopping before the attendant&apos;s desk.
 
 Prepare for Audition
 An Interactive Fiction by Jonathan Nakagawa
 Release 1 / Serial number 141003 / Inform 7 build 6L38 (I6/v6.33 lib 6/12N) SD
 
 West Corridor
-Beside you here the humm of a black vending machine. Behind you the the hallway carries on the east. To the south is a bathroom. Infront of you is a small reception desk with a clipboard resting on it and the attendant sitting behind it looking up at you expectantly.
+Beside you here the hum of a black vending machine. Behind you the hallway carries on the east. To the south is a bathroom. In front of you is a small reception desk with a clipboard resting on it and the attendant sitting behind it looking up at you expectantly.
 
 Hello, you must be here for your piano audition. The reviewers are ready for you. Lets get this over with quickly I really am starving.
 
 &gt;</result>
     <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="148">NO</temporary>
+    <changed>YES</changed>
+    <temporary score="150">NO</temporary>
     <children>
       <child nodeId="node-0x1077f440" />
       <child nodeId="node-0xf673040" />
@@ -689,12 +689,12 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
   <item nodeId="node-0x1477fb70">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Audition Room
-A beautiful sleek grand piano is centered in middle of the stage facing towards the audiance section.
+A beautiful sleek grand piano is centered in middle of the stage facing towards the audience section.
 
 &gt;</result>
     <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="136">YES</temporary>
+    <changed>YES</changed>
+    <temporary score="150">YES</temporary>
     <children>
       <child nodeId="node-0x147819c0" />
     </children>
@@ -707,7 +707,7 @@ test
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="135">YES</temporary>
+    <temporary score="149">YES</temporary>
     <children>
       <child nodeId="node-0x14baded0" />
     </children>
