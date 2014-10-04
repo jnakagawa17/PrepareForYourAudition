@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Skein rootNode="node-0x4e2950" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x147819c0" />
+  <activeNode nodeId="node-0x4e2950" />
   <item nodeId="node-0x4e2950">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
@@ -703,8 +703,16 @@ A beautiful sleek grand piano is centered in middle of the stage facing towards 
     <command xml:space="preserve">sit on piano stool</command>
     <result xml:space="preserve">You get into Piano Stool.
 
-test
-&gt;</result>
+
+
+    *** As you play through your piece you begin to frown. Every thing sounds okay. Nothing is particularly terrible but it isn&apos;t inspiring. Every note is just off timed, all the dynamics are relatively closely adhered to. You glance over at Susan Wong and find her slightly board gazing out a window. When you finish she says, &quot;Not bad. Pay attention to some of the dynamics.&quot; ***
+
+
+In that game you scored 0 out of a possible 11, in 2 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="149">YES</temporary>

@@ -297,7 +297,7 @@ Plaque is scenery. It is in Music Library. The description is "You quickly scan 
 After examining Plaque when the Plaque is not handled:
 increase score by 1;
 
-Audition Room is a room. It is north of West Corridor .
+Audition Room is a room. It is north of West Corridor . "You glance around the room seeing a woman sitting in the audiance section facing a stage. On the stage is a Grand Piano with a Paino Stool resting before it."
 
 After entering Audition room for the first time:
 	if player carries flyer:
@@ -324,14 +324,14 @@ Instead of talking to Susan Wong:
 Every turn:
 	if the player is in Piano Stool:
 		if score is 11:
-			end the story finally saying "As you play through your piece you begin to smile. Every thing fell perfectly into place. Every note perfectly timed, all the dynamics excellently adhered to. You glance over at Susan Wong and find her paying close attention to you. When you finish she exclaims, 'Incredible truly incredibly. Never have I hears such a good rendition.'";
+			end the story finally saying "As you play through your piece you begin to smile. Every thing fell perfectly into place. Every note perfectly timed, all the dynamics excellently adhered to. You glance over at Susan Wong and find her paying close attention to you. When you finish she exclaims, 'Incredible truly incredibly. Never have I hears such a good rendition.' Congratulations you passed your audition.";
 		otherwise:
 			if score is greater than 5:
-				end the story finally saying "As you play through your piece you begin to frown. Every thing sounds okay. Nothing is particularly terrible but it isn't inspiring. Every note is just off timed, all the dynamics are relatively closely adhered to. You glance over at Susan Wong and find her slightly board gazing out a window. When you finish she says, 'Not bad. Pay attention to some of the dynamics.'";
+				end the story finally saying "As you play through your piece you begin to frown. Every thing sounds okay. Nothing is particularly terrible but it isn't inspiring. Every note is just off timed, all the dynamics are relatively closely adhered to. You glance over at Susan Wong and find her slightly board gazing out a window. When you finish she says, 'Not bad. Pay attention to some of the dynamics. Over all you did pretty well.' Congratulations you passed your audition.";
 			otherwise:
 				if score is greater than 1:
-					end the story finally saying "As you play through your piece you begin to frown. Every thing sounds okay. Nothing is particularly terrible but it isn't inspiring. Every note is just off timed, all the dynamics are relatively closely adhered to. You glance over at Susan Wong and find her slightly board gazing out a window. When you finish she says, 'Not bad. Pay attention to some of the dynamics.'";
+					end the story finally saying "As you play through your piece you begin to glare. Every thing sounds slightly off. A few sections sound pretty terrible but some places sound nice. Every note is just off timed, all the dynamics are relatively closely adhered to. You glance over at Susan Wong and find her cleanning her finger nails. When you finish she says, 'I won't lie that didn't sound like someone who was prepared. It could have been a lot worse but it could also have been a lot better.' You have failed your audition";
 				otherwise:
-					end the story finally saying "As you play through your piece you realize that you have no idea what you are doing. Every note is completly off timed, you use no dynamics playing everything in a single monotone buzz. You glance over at Susan Wong and find that she has stood up. She exclaims, 'This is so terrible I can't stand to here it for another second.' Then storms out of the room.";
+					end the story finally saying "As you play through your piece you realize that you have no idea what you are doing. Every note is completely off timed, you use no dynamics playing everything in a single monotone buzz. You glance over at Susan Wong and find that she has stood up. She exclaims, 'This is so terrible I can't stand to here it for another second.' Then storms out of the room. You have completely failed you audition.";
 
 Hole is a container. It is locked and lockable.
