@@ -30,31 +30,43 @@ Understand "talk to [someone]" or “converse with
 Check talking to: say "[The noun] doesn't reply."
 [taken from http://www.musicwords.net/if/InformHandbook.pdf chapter 5]
 
-When play begins: say "Today is the day! More than a decade of work has led you to this one moment. You steadily trod into the music building suppressing the desire to bound forward wildly screaming from fear and excitement. You pass through the east side of a hallway stopping before the attendant's desk."
+When play begins: say "Today is the day! More than a decade of work has led you to this one moment. You nerviously walk down a paved stone hallway torwards your test. You are increadbly unprepared for this Piano Audition. You haven't practiced or even really decided on what piece you are going to play. In truth you grew so nevious everytime you thought of the audition that in the last few weeks leading up to now you had trained yourself not to think of it at all. You woke up today at 9:00 glad that it's finally the weekend and you can for go responsibilites for the next couple days only to find to your shock and dismay that on you calendar was writen Piano Audition: 10:00 A.M. You didn't have time to grab sheet music or anything else. You pass through from the west side of the hallway to the east stopping before the attendant's desk."
 
 West Corridor is a room. It is west of East Corridor. The description is "Beside you here the hum of a black vending machine. Behind you the hallway carries on the east. To the south is a bathroom. In front of you is a small reception desk with a clipboard resting on it and the attendant sitting behind it looking up at you expectantly."
 
 [Code for buying food puzzle]
 
-Black Vending Machine is scenery. It is in West Corridor. The description is "A large oblong metal box is pressed up against the wall humming softly. It is filled with various food products."
+Black Vending Machine is a container. It is in West Corridor. It is undescribed. The description is "A large oblong metal box is pressed up against the wall humming softly. It is filled with various food products."
 
 Food Products is scenery. It is in West Corridor. The description is "The vending machine contains packets of oreos, peanuts, and apples."
 
-Oreos is scenery. It is in West Corridor. "A few packets of oreos are held in the slot A1. The A1 button has  $0.50 written on it."
+Oreos is a thing. It is in Black Vending Machine. It is edible. It is undescribed. The description is "A few packets of oreos are held in the slot A1. The A1 button has  $0.50 written on it."
 
-Peanuts is scenery. It is in West Corridor. "Bags of peanuts extend back into the vending machine as far as you can see in slot A3. The A3 button says $0.75"
+Peanuts is a thing. It is in Black Vending Machine. It is edible. It is undescribed. The description is "Bags of peanuts extend back into the vending machine as far as you can see in slot A3. The A3 button says $0.75"
 
-Apples is scenery. It is in West Corridor. "A couple packaged apples are in slot A4. The A4 button reads $1."
+Apples is a thing. It is in Black Vending Machine. It is edible. It is undescribed. The description is "A couple packaged apples are in slot A4. The A4 button reads $1."
+
+Instead of taking Oreos:
+	say "You need to buy them.";
+
+Instead of taking Peanuts:
+	say "You need to buy them.";
+		
+Instead of taking Apples:
+	say "You need to buy them.";
 
 Instead of buying Oreos:
-move Two Quarters to hole;
-move Oreo to player;
-say "A package of oreos pops out of the machine with a satisfying cha-ching."
+	if player carries Two Quarters:
+		move Two Quarters to hole;
+		move Oreos to player;
+		say "A package of oreos pops out of the machine with a satisfying cha-ching.";
+	otherwise:
+		say "You don't have enough money";
 
 Instead of buying Peanuts:
 	if player carries dollar:
 		move Dollar to hole;
-		move Peanut to player;
+		move Peanuts to player;
 		say "A package of Peanuts pops out of the machine with a satisfying cha-ching.";
 	otherwise:
 		say "You don't have enough money"
@@ -62,25 +74,18 @@ Instead of buying Peanuts:
 Instead of buying Apples:
 	if player carries dollar:
 		move Dollar to hole;
-		move Apple to player;
+		move Apples to player;
 		say "An apple pops out of the machine with a satisfying cha-ching.";
 	otherwise:
 		say "You don't have enough money"
 
-
-Oreo is a thing. Oreo is edible. It is in Hole.
-
-Peanut is a thing. Peanut is edible. It is in Hole.
-
-Apple is a thing. Apple is edible. It is in Hole.
-
-After eating the Oreo for the first time:
+After eating the Oreos for the first time:
 increase score by 1;
 
-After eating the Peanut for the first time:
+After eating the Peanuts for the first time:
 increase score by 1;
 
-After eating the Apple for the first time:
+After eating the Apples for the first time:
 increase score by 1;
 
 Desk is scenery. It is in West Corridor. The description is "You examine the desk finding it mostly unremarkable except for a clipboard resting on it."
@@ -92,25 +97,25 @@ Attendant is a woman in West Corridor. Understand "woman" as Attendant. Attendan
 Instead of talking to Attendant:
 say "[one of]'I am so incredibly hungry right now.'[or]'Are you ready for your audition?'[or]'Good luck with your audition'[stopping]".
 
-Instead of giving Oreo to attendant:
-	if player carries Oreo:
-		move Oreo to attendant;
+Instead of giving Oreos to attendant:
+	if player carries Oreos:
+		move Oreos to attendant;
 		move Library Key to player;
 		say "'Thank you so much! I'm sure the reviewers can wait a while. Here is the key to where we keep all our sheet music. Good luck'";
 	otherwise:
 		say "You don't have any Oreos"
 
-Instead of giving Peanut to attendant:
-	if player carries peanut:
-		move peanut to attendant;
+Instead of giving Peanuts to attendant:
+	if player carries peanuts:
+		move peanuts to attendant;
 		move Library Key to player;
 		say "'Thank you so much! I'm sure the reviewers can wait a while. Here is the key to where we keep all our sheet music. Good luck'";
 	otherwise:
 		say "You don't have any Peanuts"
 
-Instead of giving Peanut to Apple:
-	if player carries Apple:
-		move Apple to attendant;
+Instead of giving apples to attendant:
+	if player carries Apples:
+		move Apples to attendant;
 		move Library Key to player;
 		say "'Thank you so much! I'm sure the reviewers can wait a while. Here is the key to where we keep all our sheet music. Good luck'";
 	otherwise:
@@ -210,6 +215,8 @@ Understand "Loose pieces of paper" as flyer.
 
 Random Objects is scenery. It is in Practice Room. The description is "An old wooden clock, black and white photograph, and few coins lie scattered across the top of the dresser. However, nothing catches your eye as being particularly interesting."
 
+[This section below is to move the pianist back and forth between the corridor and practice room without changing descriptions.]
+
 Instead of going north:
 	If player is in West Corridor:
 		Move player to Audition Room;
@@ -252,6 +259,8 @@ Sheet Music of Beethoven's Fifth Piano Concerto in e-flat major is a thing. It i
 Sheet Music of Prokofiev's second Piano Concerto is a thing. It is in shelf. It is undescribed. The description is "Prokofiev's second piano concerto is one of if not the hardest piano concerto ever written. It is nearly impossible to play it well."
 
 Sheet Music of Twinkle Twinkle Little Star is a thing. It is in shelf. It is undescribed. The description is "The good old classic played by five year olds every where around the globe."
+
+[Code for forcing player to only choosing one piece.]
 
 Instead of taking Sheet Music of Ravel's Piano Concerto in g major:
 	move Sheet Music of Ravel's Piano Concerto in g major to player;
