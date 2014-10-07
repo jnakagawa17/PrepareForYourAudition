@@ -2,7 +2,7 @@
 
 Use scoring
 
-The maximum score is 11
+The maximum score is 10
 
 Understand "buy" as taking
 
@@ -195,19 +195,23 @@ Piano Seat is an open enterable scenery container. It is in Practice Room. It is
 Every Turn:
 	If player is in Piano seat for the first time:
 		if player carries Sheet Music of Twinkle Twinkle Little Star: 
-			say "You begin to practice working on all the most difficult sections of the piece. As you work away for more than half an hour you become noticeably better at the piece.";
+			say "You begin to practice working on all the most difficult sections of the piece. As you work away for more than half an hour you become noticeably better at the piece. You stand up turning to thank the man for his help only to find he is gone.";
+			move player to Practice Room;
 		otherwise:
 			if player carries Sheet Music of Prokofiev's second Piano Concerto: 
-				say "You begin to practice working on all the most difficult sections of the piece. As you work away for more than half an hour you become noticeably better at the piece.";
+				say "You begin to practice working on all the most difficult sections of the piece. As you work away for more than half an hour you become noticeably better at the piece. You stand up turning to thank the man for his help only to find he is gone.";
 				increase score by 6;
+				move player to Practice Room;
 			otherwise:
 				if player carries Sheet Music of Beethoven's Fifth Piano Concerto in e-flat major: 
-					say "You begin to practice working on all the most difficult sections of the piece. As you work away for more than half an hour you become noticeably better at the piece.";
+					say "You begin to practice working on all the most difficult sections of the piece. As you work away for more than half an hour you become noticeably better at the piece. You stand up turning to thank the man for his help only to find he is gone.";
 					increase score by 3;
+					move player to Practice Room;
 				otherwise:
 					if player carries Sheet Music of Ravel's Piano Concerto in g major: 
-						say "You begin to practice working on all the most difficult sections of the piece. As you work away for more than half an hour you become noticeably better at the piece.";
+						say "You begin to practice working on all the most difficult sections of the piece. As you work away for more than half an hour you become noticeably better at the piece. You stand up turning to thank the man for his help only to find he is gone.";
 						increase score by 1;
+						move player to Practice Room;
 					otherwise:
 						say "You need sheet music to practice.";
 
@@ -232,11 +236,10 @@ Instead of going north:
 		If player is in East corridor:
 			If player has Library Key:
 				move player to Music Library;
-			otherwise:
-				If player is in Practice Room:
-					If Pianist is in Practice Room:
-						say "'Well if you are leaving so am I'";
-						move Pianist to East Corridor;
+		otherwise:
+			If player is in Practice Room:
+				move Pianist to East Corridor;
+				move player to East Corridor;
 
 	[If player is in Bathroom:
 		move player to West Corridor;
@@ -299,13 +302,13 @@ Instead of taking Sheet Music of Twinkle Twinkle Little Star:
 	say "You are not sure what possessed you to take this piece over all the other great works surrounding you but you might as well make the best of it.";
 
 After taking Sheet Music of Ravel's Piano Concerto in g major when the Sheet Music of Ravel's Piano Concerto in g major is not handled:
-increase score by 2;
+	increase score by 2;
 
 After taking Sheet Music of Beethoven's Fifth Piano Concerto in e-flat major when the Sheet Music of Beethoven's Fifth Piano Concerto in e-flat major is not handled:
-increase score by 1;
+	increase score by 1;
 
 After taking Sheet Music of Twinkle Twinkle Little Star when the Sheet Music of Twinkle Twinkle Little Star is not handled:
-decrease score by 100;		
+	decrease score by 100;		
 
 [Taken from http://www.musicwords.net/if/InformHandbook.pdf Chapter 7]
 
@@ -340,7 +343,7 @@ Instead of talking to Susan Wong:
 
 Every turn:
 	if the player is in Piano Stool:
-		if score is 11:
+		if score is 10:
 			end the story finally saying "As you play through your piece you begin to smile. Every thing fell perfectly into place. Every note perfectly timed, all the dynamics excellently adhered to. You glance over at Susan Wong and find her paying close attention to you. When you finish she exclaims, 'Incredible truly incredibly. Never have I hears such a good rendition.' Congratulations you passed your audition.";
 		otherwise:
 			if score is greater than 5:

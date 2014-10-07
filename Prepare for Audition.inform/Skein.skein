@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Skein rootNode="node-0x4e2950" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x171e9ec0" />
+  <activeNode nodeId="node-0x17174be0" />
   <item nodeId="node-0x4e2950">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
@@ -21,9 +21,10 @@ Hello, you must be here for your piano audition. The reviewers are ready for you
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="276">NO</temporary>
+    <temporary score="412">NO</temporary>
     <children>
       <child nodeId="node-0x159df540" />
+      <child nodeId="node-0x171d5d90" />
       <child nodeId="node-0x1869f440" />
       <child nodeId="node-0x14b37630" />
       <child nodeId="node-0x159549c0" />
@@ -41,128 +42,14 @@ Hello, you must be here for your piano audition. The reviewers are ready for you
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="276">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="390">YES</temporary>
     <children>
+      <child nodeId="node-0xf4e12f0" />
+      <child nodeId="node-0x14b5fca0" />
       <child nodeId="node-0x10787c10" />
       <child nodeId="node-0xecf5850" />
-      <child nodeId="node-0xf4e12f0" />
     </children>
-  </item>
-  <item nodeId="node-0xf4e12f0">
-    <command xml:space="preserve">give oreos</command>
-    <result xml:space="preserve">(to Attendant)
-&quot;Thank you so much! I&apos;m sure the reviewers can wait a while. Here is the key to where we keep all our sheet music. Good luck&quot;
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="276">YES</temporary>
-    <children>
-      <child nodeId="node-0x14b40850" />
-    </children>
-  </item>
-  <item nodeId="node-0x14b40850">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-East Corridor
-You can hear your own foot falls as you walk down a stone walk way. An older man sits hunched over on a cushioned bench cleaning his finger nails. To the north is the Music Library where all sorts of sheet music is kept. To your east is a Practice Room. Both rooms are locked because its after hours.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="276">YES</temporary>
-    <children>
-      <child nodeId="node-0x169880d0" />
-    </children>
-  </item>
-  <item nodeId="node-0x169880d0">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">(first unlocking the Music Library Door with The Library Key, then opening the door 
-
-Music Library
-Rows and rows of sheet music fill this room lining the walls and stretching from floor to celling. However, only shelf holds piano music.
-
-You can see Shelf here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="276">YES</temporary>
-    <children>
-      <child nodeId="node-0x171668a0" />
-    </children>
-  </item>
-  <item nodeId="node-0x171668a0">
-    <command xml:space="preserve">take twinkle twinkle</command>
-    <result xml:space="preserve">You are not sure what possessed you to take this piece over all the other great works surrounding you but you might as well make the best of it.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="276">YES</temporary>
-    <children>
-      <child nodeId="node-0x1864c2b0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1864c2b0">
-    <command xml:space="preserve">s</command>
-    <result xml:space="preserve">
-East Corridor
-You can hear your own foot falls as you walk down a stone walk way. An older man sits hunched over on a cushioned bench cleaning his finger nails. To the north is the Music Library where all sorts of sheet music is kept. To your east is a Practice Room. Both rooms are locked because its after hours.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="276">YES</temporary>
-    <children>
-      <child nodeId="node-0x169cb430" />
-    </children>
-  </item>
-  <item nodeId="node-0x169cb430">
-    <command xml:space="preserve">talk to older man</command>
-    <result xml:space="preserve">What&apos;s that you have there. Twinkle Twinkle! Finally someone who understands that the greatest beauty comes from simplicity. Here&apos;s the key to the practice room. I&apos;ll meet you inside.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="276">YES</temporary>
-    <children>
-      <child nodeId="node-0xeca9e70" />
-    </children>
-  </item>
-  <item nodeId="node-0xeca9e70">
-    <command xml:space="preserve">s</command>
-    <result xml:space="preserve">(first unlocking the Practice Room Door with The Music Room Key, then opening the door 
-
-Practice Room
-As you enter the Practice room only two pieces of furniture stand out to you. One is a black piano with a seat before it on one wall of the room and the other a small dresser. The hallway is back to the west.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="276">YES</temporary>
-    <children>
-      <child nodeId="node-0x15e0bb80" />
-    </children>
-  </item>
-  <item nodeId="node-0x15e0bb80">
-    <command xml:space="preserve">x piano</command>
-    <result xml:space="preserve">(Practice Piano)
-A stand up piano has been placed in front of a small window. The piano is bare save for a golden inscription. A piano seat stands before the piano.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="276">YES</temporary>
-    <children>
-      <child nodeId="node-0x171e9ec0" />
-    </children>
-  </item>
-  <item nodeId="node-0x171e9ec0">
-    <command xml:space="preserve">sit on seat</command>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="275">YES</temporary>
   </item>
   <item nodeId="node-0xecf5850">
     <command xml:space="preserve">give oreos to attendant</command>
@@ -600,6 +487,736 @@ It seems to be locked.
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="120">YES</temporary>
+  </item>
+  <item nodeId="node-0x14b5fca0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+East Corridor
+You can hear your own foot falls as you walk down a stone walk way. An older man sits hunched over on a cushioned bench cleaning his finger nails. To the north is the Music Library where all sorts of sheet music is kept. To your east is a Practice Room. Both rooms are locked because its after hours.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="390">YES</temporary>
+    <children>
+      <child nodeId="node-0x15964390" />
+    </children>
+  </item>
+  <item nodeId="node-0x15964390">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+West Corridor
+Beside you here the hum of a black vending machine. Behind you the hallway carries on the east. To the south is a bathroom. In front of you is a small reception desk with a clipboard resting on it and the attendant sitting behind it looking up at you expectantly.
+
+Hello, you must be here for your piano audition. The reviewers are ready for you in the audition room the north. Lets get this over with quickly I really am starving.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="390">YES</temporary>
+    <children>
+      <child nodeId="node-0x15e75830" />
+    </children>
+  </item>
+  <item nodeId="node-0x15e75830">
+    <command xml:space="preserve">give oreos</command>
+    <result xml:space="preserve">(to Attendant)
+&quot;Thank you so much! I&apos;m sure the reviewers can wait a while. Here is the key to where we keep all our sheet music. Good luck&quot;
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="390">YES</temporary>
+    <children>
+      <child nodeId="node-0xf43d070" />
+    </children>
+  </item>
+  <item nodeId="node-0xf43d070">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+East Corridor
+You can hear your own foot falls as you walk down a stone walk way. An older man sits hunched over on a cushioned bench cleaning his finger nails. To the north is the Music Library where all sorts of sheet music is kept. To your east is a Practice Room. Both rooms are locked because its after hours.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="390">YES</temporary>
+    <children>
+      <child nodeId="node-0x16947590" />
+    </children>
+  </item>
+  <item nodeId="node-0x16947590">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">(first unlocking the Music Library Door with The Library Key, then opening the door 
+
+Music Library
+Rows and rows of sheet music fill this room lining the walls and stretching from floor to celling. However, only shelf holds piano music.
+
+You can see Shelf here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="390">YES</temporary>
+    <children>
+      <child nodeId="node-0x169e6bf0" />
+    </children>
+  </item>
+  <item nodeId="node-0x169e6bf0">
+    <command xml:space="preserve">take twinkle</command>
+    <result xml:space="preserve">You are not sure what possessed you to take this piece over all the other great works surrounding you but you might as well make the best of it.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="390">YES</temporary>
+    <children>
+      <child nodeId="node-0x16916b00" />
+    </children>
+  </item>
+  <item nodeId="node-0x16916b00">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+East Corridor
+You can hear your own foot falls as you walk down a stone walk way. An older man sits hunched over on a cushioned bench cleaning his finger nails. To the north is the Music Library where all sorts of sheet music is kept. To your east is a Practice Room. Both rooms are locked because its after hours.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="390">YES</temporary>
+    <children>
+      <child nodeId="node-0x10794d40" />
+    </children>
+  </item>
+  <item nodeId="node-0x10794d40">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">(first opening Practice Room Door)
+It seems to be locked.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="390">YES</temporary>
+    <children>
+      <child nodeId="node-0x16946670" />
+    </children>
+  </item>
+  <item nodeId="node-0x16946670">
+    <command xml:space="preserve">talk to man</command>
+    <result xml:space="preserve">What&apos;s that you have there. Twinkle Twinkle! Finally someone who understands that the greatest beauty comes from simplicity. Here&apos;s the key to the practice room. I&apos;ll meet you inside.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="390">YES</temporary>
+    <children>
+      <child nodeId="node-0x1866a1f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1866a1f0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">(first unlocking the Practice Room Door with The Music Room Key, then opening the door 
+
+Practice Room
+As you enter the Practice room only two pieces of furniture stand out to you. One is a black piano with a seat before it on one wall of the room and the other a small dresser. The hallway is back to the west.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="390">YES</temporary>
+    <children>
+      <child nodeId="node-0x15e46bc0" />
+    </children>
+  </item>
+  <item nodeId="node-0x15e46bc0">
+    <command xml:space="preserve">sit on seat</command>
+    <result xml:space="preserve">You get into Piano Seat.
+
+You begin to practice working on all the most difficult sections of the piece. As you work away for more than half an hour you become noticeably better at the piece. You stand up turning to thank the man for his help only to find he is gone.
+
+Practice Room
+As you enter the Practice room only two pieces of furniture stand out to you. One is a black piano with a seat before it on one wall of the room and the other a small dresser. The hallway is back to the west.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="390">YES</temporary>
+    <children>
+      <child nodeId="node-0x186df700" />
+    </children>
+  </item>
+  <item nodeId="node-0x186df700">
+    <command xml:space="preserve">sit on seat</command>
+    <result xml:space="preserve">You get into Piano Seat.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="390">YES</temporary>
+    <children>
+      <child nodeId="node-0x7ad3ed0" />
+    </children>
+  </item>
+  <item nodeId="node-0x7ad3ed0">
+    <command xml:space="preserve">exit</command>
+    <result xml:space="preserve">You get out of Piano Seat.
+
+Practice Room
+As you enter the Practice room only two pieces of furniture stand out to you. One is a black piano with a seat before it on one wall of the room and the other a small dresser. The hallway is back to the west.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="390">YES</temporary>
+    <children>
+      <child nodeId="node-0x150c1940" />
+    </children>
+  </item>
+  <item nodeId="node-0x150c1940">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">East Corridor
+You can hear your own foot falls as you walk down a stone walk way. An older man sits hunched over on a cushioned bench cleaning his finger nails. To the north is the Music Library where all sorts of sheet music is kept. To your east is a Practice Room. Both rooms are locked because its after hours.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="390">YES</temporary>
+    <children>
+      <child nodeId="node-0x15e5dda0" />
+    </children>
+  </item>
+  <item nodeId="node-0x15e5dda0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Music Library
+Rows and rows of sheet music fill this room lining the walls and stretching from floor to celling. However, only shelf holds piano music.
+
+You can see Shelf (empty) here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="390">YES</temporary>
+    <children>
+      <child nodeId="node-0x15081570" />
+    </children>
+  </item>
+  <item nodeId="node-0x15081570">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Music Library
+Rows and rows of sheet music fill this room lining the walls and stretching from floor to celling. However, only shelf holds piano music.
+
+You can see Shelf (empty) here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="390">YES</temporary>
+    <children>
+      <child nodeId="node-0x169e5580" />
+    </children>
+  </item>
+  <item nodeId="node-0x169e5580">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="390">YES</temporary>
+    <children>
+      <child nodeId="node-0x169b0c70" />
+    </children>
+  </item>
+  <item nodeId="node-0x169b0c70">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Music Library
+Rows and rows of sheet music fill this room lining the walls and stretching from floor to celling. However, only shelf holds piano music.
+
+You can see Shelf (empty) here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="390">YES</temporary>
+    <children>
+      <child nodeId="node-0x186a1fb0" />
+    </children>
+  </item>
+  <item nodeId="node-0x186a1fb0">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="390">YES</temporary>
+    <children>
+      <child nodeId="node-0x1716e050" />
+    </children>
+  </item>
+  <item nodeId="node-0x1716e050">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Music Library
+Rows and rows of sheet music fill this room lining the walls and stretching from floor to celling. However, only shelf holds piano music.
+
+You can see Shelf (empty) here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="390">YES</temporary>
+    <children>
+      <child nodeId="node-0x150ce460" />
+    </children>
+  </item>
+  <item nodeId="node-0x150ce460">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="390">YES</temporary>
+    <children>
+      <child nodeId="node-0x14b626d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x14b626d0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+East Corridor
+You can hear your own foot falls as you walk down a stone walk way. An older man sits hunched over on a cushioned bench cleaning his finger nails. To the north is the Music Library where all sorts of sheet music is kept. To your east is a Practice Room. Both rooms are locked because its after hours.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="390">YES</temporary>
+    <children>
+      <child nodeId="node-0x31b5f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x31b5f0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Practice Room
+As you enter the Practice room only two pieces of furniture stand out to you. One is a black piano with a seat before it on one wall of the room and the other a small dresser. The hallway is back to the west.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="390">YES</temporary>
+    <children>
+      <child nodeId="node-0x15e20b20" />
+    </children>
+  </item>
+  <item nodeId="node-0x15e20b20">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">East Corridor
+You can hear your own foot falls as you walk down a stone walk way. An older man sits hunched over on a cushioned bench cleaning his finger nails. To the north is the Music Library where all sorts of sheet music is kept. To your east is a Practice Room. Both rooms are locked because its after hours.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="390">YES</temporary>
+    <children>
+      <child nodeId="node-0x187852d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x187852d0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="390">YES</temporary>
+    <children>
+      <child nodeId="node-0x186e2450" />
+    </children>
+  </item>
+  <item nodeId="node-0x186e2450">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+West Corridor
+Beside you here the hum of a black vending machine. Behind you the hallway carries on the east. To the south is a bathroom. In front of you is a small reception desk with a clipboard resting on it and the attendant sitting behind it looking up at you expectantly.
+
+Hello, you must be here for your piano audition. The reviewers are ready for you in the audition room the north. Lets get this over with quickly I really am starving.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="390">YES</temporary>
+    <children>
+      <child nodeId="node-0x186da8c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x186da8c0">
+    <command xml:space="preserve">buy apple</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="390">YES</temporary>
+    <children>
+      <child nodeId="node-0x16902a80" />
+    </children>
+  </item>
+  <item nodeId="node-0x16902a80">
+    <command xml:space="preserve">buy apples</command>
+    <result xml:space="preserve">An apple pops out of the machine with a satisfying cha-ching.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="390">YES</temporary>
+    <children>
+      <child nodeId="node-0x186affe0" />
+    </children>
+  </item>
+  <item nodeId="node-0x186affe0">
+    <command xml:space="preserve">eat apples</command>
+    <result xml:space="preserve">[Your score has just gone up by one point.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="390">YES</temporary>
+    <children>
+      <child nodeId="node-0x18657890" />
+    </children>
+  </item>
+  <item nodeId="node-0x18657890">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Audition Room
+You glance around the room seeing a woman sitting in the audiance section facing a stage. On the stage is a Grand Piano with a Paino Stool resting before it.
+
+A beautiful sleek grand piano is centered in middle of the stage facing towards the audience section.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="390">YES</temporary>
+    <children>
+      <child nodeId="node-0x186da0f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x186da0f0">
+    <command xml:space="preserve">talk to woman</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="390">YES</temporary>
+    <children>
+      <child nodeId="node-0x17171710" />
+    </children>
+  </item>
+  <item nodeId="node-0x17171710">
+    <command xml:space="preserve">talk to susan wong</command>
+    <result xml:space="preserve">&quot;We are ready when you are.&quot;
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="390">YES</temporary>
+    <children>
+      <child nodeId="node-0xf4f3e20" />
+    </children>
+  </item>
+  <item nodeId="node-0xf4f3e20">
+    <command xml:space="preserve">give flyer to susan wong</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="390">YES</temporary>
+    <children>
+      <child nodeId="node-0x1695d2a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1695d2a0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+West Corridor
+Beside you here the hum of a black vending machine. Behind you the hallway carries on the east. To the south is a bathroom. In front of you is a small reception desk with a clipboard resting on it and the attendant sitting behind it looking up at you expectantly.
+
+Hello, you must be here for your piano audition. The reviewers are ready for you in the audition room the north. Lets get this over with quickly I really am starving.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="390">YES</temporary>
+    <children>
+      <child nodeId="node-0x150c78d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x150c78d0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+East Corridor
+You can hear your own foot falls as you walk down a stone walk way. An older man sits hunched over on a cushioned bench cleaning his finger nails. To the north is the Music Library where all sorts of sheet music is kept. To your east is a Practice Room. Both rooms are locked because its after hours.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="390">YES</temporary>
+    <children>
+      <child nodeId="node-0x15e23650" />
+    </children>
+  </item>
+  <item nodeId="node-0x15e23650">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Practice Room
+As you enter the Practice room only two pieces of furniture stand out to you. One is a black piano with a seat before it on one wall of the room and the other a small dresser. The hallway is back to the west.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="390">YES</temporary>
+    <children>
+      <child nodeId="node-0x169264f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x169264f0">
+    <command xml:space="preserve">take flyer</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="390">YES</temporary>
+    <children>
+      <child nodeId="node-0x15ee9d70" />
+    </children>
+  </item>
+  <item nodeId="node-0x15ee9d70">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">East Corridor
+You can hear your own foot falls as you walk down a stone walk way. An older man sits hunched over on a cushioned bench cleaning his finger nails. To the north is the Music Library where all sorts of sheet music is kept. To your east is a Practice Room. Both rooms are locked because its after hours.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="390">YES</temporary>
+    <children>
+      <child nodeId="node-0x10162a80" />
+    </children>
+  </item>
+  <item nodeId="node-0x10162a80">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+West Corridor
+Beside you here the hum of a black vending machine. Behind you the hallway carries on the east. To the south is a bathroom. In front of you is a small reception desk with a clipboard resting on it and the attendant sitting behind it looking up at you expectantly.
+
+Hello, you must be here for your piano audition. The reviewers are ready for you in the audition room the north. Lets get this over with quickly I really am starving.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="390">YES</temporary>
+    <children>
+      <child nodeId="node-0x1590c4a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1590c4a0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="390">YES</temporary>
+    <children>
+      <child nodeId="node-0x1695fe40" />
+    </children>
+  </item>
+  <item nodeId="node-0x1695fe40">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Audition Room
+You glance around the room seeing a woman sitting in the audiance section facing a stage. On the stage is a Grand Piano with a Paino Stool resting before it.
+
+A beautiful sleek grand piano is centered in middle of the stage facing towards the audience section.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="390">YES</temporary>
+    <children>
+      <child nodeId="node-0x15e10f60" />
+    </children>
+  </item>
+  <item nodeId="node-0x15e10f60">
+    <command xml:space="preserve">talk to susan </command>
+    <result xml:space="preserve">&quot;Wait, aren&apos;t you a Pianist?&quot; you ask. &quot;Yes, in fact I am. How did you know?&quot; &quot;I found this old flyer for one of your recitals.&quot; &quot;Oh yes I remember this one. I think I will enjoy your playing very much.&quot;
+
+[Your score has just gone up by two points.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="390">YES</temporary>
+    <children>
+      <child nodeId="node-0x1711cf70" />
+    </children>
+  </item>
+  <item nodeId="node-0x1711cf70">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="390">YES</temporary>
+    <children>
+      <child nodeId="node-0x169b8de0" />
+    </children>
+  </item>
+  <item nodeId="node-0x169b8de0">
+    <command xml:space="preserve">sit on seat</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="390">YES</temporary>
+    <children>
+      <child nodeId="node-0x17171b80" />
+    </children>
+  </item>
+  <item nodeId="node-0x17171b80">
+    <command xml:space="preserve">sit on stool</command>
+    <result xml:space="preserve">You get into Piano Stool.
+
+
+
+    *** As you play through your piece you begin to glare. Every thing sounds slightly off. A few sections sound pretty terrible but some places sound nice. Every note is just off timed, all the dynamics are relatively closely adhered to. You glance over at Susan Wong and find her cleanning her finger nails. When you finish she says, &quot;I won&apos;t lie that didn&apos;t sound like someone who was prepared. It could have been a lot worse but it could also have been a lot better.&quot; You have failed your audition ***
+
+
+In that game you scored 3 out of a possible 11, in 40 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="389">YES</temporary>
+  </item>
+  <item nodeId="node-0xf4e12f0">
+    <command xml:space="preserve">give oreos</command>
+    <result xml:space="preserve">(to Attendant)
+&quot;Thank you so much! I&apos;m sure the reviewers can wait a while. Here is the key to where we keep all our sheet music. Good luck&quot;
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="276">YES</temporary>
+    <children>
+      <child nodeId="node-0x14b40850" />
+    </children>
+  </item>
+  <item nodeId="node-0x14b40850">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+East Corridor
+You can hear your own foot falls as you walk down a stone walk way. An older man sits hunched over on a cushioned bench cleaning his finger nails. To the north is the Music Library where all sorts of sheet music is kept. To your east is a Practice Room. Both rooms are locked because its after hours.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="276">YES</temporary>
+    <children>
+      <child nodeId="node-0x169880d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x169880d0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">(first unlocking the Music Library Door with The Library Key, then opening the door 
+
+Music Library
+Rows and rows of sheet music fill this room lining the walls and stretching from floor to celling. However, only shelf holds piano music.
+
+You can see Shelf here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="276">YES</temporary>
+    <children>
+      <child nodeId="node-0x171668a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x171668a0">
+    <command xml:space="preserve">take twinkle twinkle</command>
+    <result xml:space="preserve">You are not sure what possessed you to take this piece over all the other great works surrounding you but you might as well make the best of it.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="276">YES</temporary>
+    <children>
+      <child nodeId="node-0x1864c2b0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1864c2b0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+East Corridor
+You can hear your own foot falls as you walk down a stone walk way. An older man sits hunched over on a cushioned bench cleaning his finger nails. To the north is the Music Library where all sorts of sheet music is kept. To your east is a Practice Room. Both rooms are locked because its after hours.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="276">YES</temporary>
+    <children>
+      <child nodeId="node-0x169cb430" />
+    </children>
+  </item>
+  <item nodeId="node-0x169cb430">
+    <command xml:space="preserve">talk to older man</command>
+    <result xml:space="preserve">What&apos;s that you have there. Twinkle Twinkle! Finally someone who understands that the greatest beauty comes from simplicity. Here&apos;s the key to the practice room. I&apos;ll meet you inside.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="276">YES</temporary>
+    <children>
+      <child nodeId="node-0xeca9e70" />
+    </children>
+  </item>
+  <item nodeId="node-0xeca9e70">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">(first unlocking the Practice Room Door with The Music Room Key, then opening the door 
+
+Practice Room
+As you enter the Practice room only two pieces of furniture stand out to you. One is a black piano with a seat before it on one wall of the room and the other a small dresser. The hallway is back to the west.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="276">YES</temporary>
+    <children>
+      <child nodeId="node-0x15e0bb80" />
+    </children>
+  </item>
+  <item nodeId="node-0x15e0bb80">
+    <command xml:space="preserve">x piano</command>
+    <result xml:space="preserve">(Practice Piano)
+A stand up piano has been placed in front of a small window. The piano is bare save for a golden inscription. A piano seat stands before the piano.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="276">YES</temporary>
+    <children>
+      <child nodeId="node-0x171e9ec0" />
+    </children>
+  </item>
+  <item nodeId="node-0x171e9ec0">
+    <command xml:space="preserve">sit on seat</command>
+    <result xml:space="preserve">You get into Piano Seat.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="275">YES</temporary>
   </item>
   <item nodeId="node-0x15edcd80">
     <command xml:space="preserve">x west corridor</command>
@@ -1789,8 +2406,8 @@ As you enter the Practice room only two pieces of furniture stand out to you. On
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="148">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="291">YES</temporary>
     <children>
       <child nodeId="node-0x1477fce0" />
     </children>
@@ -1801,11 +2418,183 @@ As you enter the Practice room only two pieces of furniture stand out to you. On
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="148">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="291">YES</temporary>
     <children>
       <child nodeId="node-0x171a15a0" />
+      <child nodeId="node-0x18650a20" />
     </children>
+  </item>
+  <item nodeId="node-0x18650a20">
+    <command xml:space="preserve">give oreos</command>
+    <result xml:space="preserve">(to Attendant)
+&quot;Thank you so much! I&apos;m sure the reviewers can wait a while. Here is the key to where we keep all our sheet music. Good luck&quot;
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="291">YES</temporary>
+    <children>
+      <child nodeId="node-0x15e4ea40" />
+    </children>
+  </item>
+  <item nodeId="node-0x15e4ea40">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+East Corridor
+You can hear your own foot falls as you walk down a stone walk way. An older man sits hunched over on a cushioned bench cleaning his finger nails. To the north is the Music Library where all sorts of sheet music is kept. To your east is a Practice Room. Both rooms are locked because its after hours.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="291">YES</temporary>
+    <children>
+      <child nodeId="node-0x169b22f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x169b22f0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">(first unlocking the Music Library Door with The Library Key, then opening the door 
+
+Music Library
+Rows and rows of sheet music fill this room lining the walls and stretching from floor to celling. However, only shelf holds piano music.
+
+You can see Shelf here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="291">YES</temporary>
+    <children>
+      <child nodeId="node-0x186b4d00" />
+    </children>
+  </item>
+  <item nodeId="node-0x186b4d00">
+    <command xml:space="preserve">take twinkle</command>
+    <result xml:space="preserve">You are not sure what possessed you to take this piece over all the other great works surrounding you but you might as well make the best of it.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="291">YES</temporary>
+    <children>
+      <child nodeId="node-0x169a63e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x169a63e0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+East Corridor
+You can hear your own foot falls as you walk down a stone walk way. An older man sits hunched over on a cushioned bench cleaning his finger nails. To the north is the Music Library where all sorts of sheet music is kept. To your east is a Practice Room. Both rooms are locked because its after hours.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="291">YES</temporary>
+    <children>
+      <child nodeId="node-0x18644250" />
+    </children>
+  </item>
+  <item nodeId="node-0x18644250">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">(first opening Practice Room Door)
+It seems to be locked.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="291">YES</temporary>
+    <children>
+      <child nodeId="node-0x169ade60" />
+    </children>
+  </item>
+  <item nodeId="node-0x169ade60">
+    <command xml:space="preserve">talk to man</command>
+    <result xml:space="preserve">What&apos;s that you have there. Twinkle Twinkle! Finally someone who understands that the greatest beauty comes from simplicity. Here&apos;s the key to the practice room. I&apos;ll meet you inside.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="291">YES</temporary>
+    <children>
+      <child nodeId="node-0x169e6200" />
+    </children>
+  </item>
+  <item nodeId="node-0x169e6200">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">(first unlocking the Practice Room Door with The Music Room Key, then opening the door 
+
+Practice Room
+As you enter the Practice room only two pieces of furniture stand out to you. One is a black piano with a seat before it on one wall of the room and the other a small dresser. The hallway is back to the west.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="291">YES</temporary>
+    <children>
+      <child nodeId="node-0x186b40e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x186b40e0">
+    <command xml:space="preserve">sit on seat</command>
+    <result xml:space="preserve">You get into Piano Seat.
+
+You begin to practice working on all the most difficult sections of the piece. As you work away for more than half an hour you become noticeably better at the piece.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="291">YES</temporary>
+    <children>
+      <child nodeId="node-0x1714bff0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1714bff0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">You begin to practice working on all the most difficult sections of the piece. As you work away for more than half an hour you become noticeably better at the piece.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="291">YES</temporary>
+    <children>
+      <child nodeId="node-0x15e14970" />
+    </children>
+  </item>
+  <item nodeId="node-0x15e14970">
+    <command xml:space="preserve">up</command>
+    <result xml:space="preserve">You would have to get out of Piano Seat first.
+
+You begin to practice working on all the most difficult sections of the piece. As you work away for more than half an hour you become noticeably better at the piece.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="291">YES</temporary>
+    <children>
+      <child nodeId="node-0x16995330" />
+    </children>
+  </item>
+  <item nodeId="node-0x16995330">
+    <command xml:space="preserve">exit</command>
+    <result xml:space="preserve">You get out of Piano Seat.
+
+Practice Room
+As you enter the Practice room only two pieces of furniture stand out to you. One is a black piano with a seat before it on one wall of the room and the other a small dresser. The hallway is back to the west.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="291">YES</temporary>
+    <children>
+      <child nodeId="node-0x15e20260" />
+    </children>
+  </item>
+  <item nodeId="node-0x15e20260">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="290">YES</temporary>
   </item>
   <item nodeId="node-0x171a15a0">
     <command xml:space="preserve">eat oreo</command>
@@ -1999,9 +2788,7 @@ You can hear your own foot falls as you walk down a stone walk way. An older man
     <changed>NO</changed>
     <temporary score="266">YES</temporary>
     <children>
-      <child nodeId="node-0xec3ad90" />
       <child nodeId="node-0xa9a9090" />
-      <child nodeId="node-0xf48f1d0" />
       <child nodeId="node-0x171af010" />
     </children>
   </item>
@@ -2013,69 +2800,6 @@ You can hear your own foot falls as you walk down a stone walk way. An older man
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="263">YES</temporary>
-  </item>
-  <item nodeId="node-0xf48f1d0">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">(first opening Music Library Door)
-It seems to be locked.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="72">YES</temporary>
-    <children>
-      <child nodeId="node-0xece3dc0" />
-    </children>
-  </item>
-  <item nodeId="node-0xece3dc0">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">
-West Corridor
-Beside you here the humm of a black vending machine. Behind you the the hallway carries on the east. To the south is a bathroom. Infront of you is a small reception desk with a clipboard resting on it and the attendant sitting behind it looking up at you expectantly.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="72">YES</temporary>
-    <children>
-      <child nodeId="node-0xf4e9060" />
-    </children>
-  </item>
-  <item nodeId="node-0xf4e9060">
-    <command xml:space="preserve">buy oreos</command>
-    <result xml:space="preserve">A package of oreos pops out of the machine with a satisfying cha-ching.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="72">YES</temporary>
-    <children>
-      <child nodeId="node-0xf428420" />
-    </children>
-  </item>
-  <item nodeId="node-0xf428420">
-    <command xml:space="preserve">give oreo to attendant</command>
-    <result xml:space="preserve">&quot;Thank you so much! I&apos;m sure the reviewers can wait a while. Here is the key to where we keep all our sheet music. Good luck&quot;
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="72">YES</temporary>
-    <children>
-      <child nodeId="node-0xece3c60" />
-    </children>
-  </item>
-  <item nodeId="node-0xece3c60">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-East Corridor
-You can hear your own foot falls as you walk down a stone walk way. An older man sits hunched over on a cushioned bench cleaning his finger nails. To the north is the Music Library where all sorts of sheet music is kept. To your east is a Practice Room. Both rooms are locked because its after hours.
-
-You can see Pianist here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="72">YES</temporary>
   </item>
   <item nodeId="node-0xa9a9090">
     <command xml:space="preserve">w</command>
@@ -2089,106 +2813,6 @@ Hello, you must be here for your piano audition. The reviewers are ready for you
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="265">YES</temporary>
-    <children>
-      <child nodeId="node-0xf4cb2b0" />
-    </children>
-  </item>
-  <item nodeId="node-0xf4cb2b0">
-    <command xml:space="preserve">buy oreo</command>
-    <result xml:space="preserve">You can&apos;t see any such thing.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="79">YES</temporary>
-    <children>
-      <child nodeId="node-0xf633900" />
-    </children>
-  </item>
-  <item nodeId="node-0xf633900">
-    <command xml:space="preserve">buy oreos</command>
-    <result xml:space="preserve">A package of oreos pops out of the machine with a satisfying cha-ching.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="79">YES</temporary>
-    <children>
-      <child nodeId="node-0xf40bb70" />
-    </children>
-  </item>
-  <item nodeId="node-0xf40bb70">
-    <command xml:space="preserve">give oreo to attendant</command>
-    <result xml:space="preserve">&quot;Thank you so much! I&apos;m sure the reviewers can wait a while. Here is the key to where we keep all our sheet music. Good luck&quot;
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="79">YES</temporary>
-    <children>
-      <child nodeId="node-0xecf67d0" />
-    </children>
-  </item>
-  <item nodeId="node-0xecf67d0">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-East Corridor
-You can hear your own foot falls as you walk down a stone walk way. An older man sits hunched over on a cushioned bench cleaning his finger nails. To the north is the Music Library where all sorts of sheet music is kept. To your east is a Practice Room. Both rooms are locked because its after hours.
-
-You can see Pianist here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="79">YES</temporary>
-    <children>
-      <child nodeId="node-0xec63650" />
-    </children>
-  </item>
-  <item nodeId="node-0xec63650">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">(first unlocking the Music Library Door with The Library Key, then opening the door 
-
-Music Library
-Rows and rows of sheet music fill this room lining the walls and streaching from floor to celling. However, only shelf holds piano music.
-
-You can see Shelf (empty) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="78">YES</temporary>
-  </item>
-  <item nodeId="node-0xec3ad90">
-    <command xml:space="preserve">talk to man</command>
-    <result xml:space="preserve">&quot;Why does it have to be so damn hot all the time.&quot;
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="89">YES</temporary>
-    <children>
-      <child nodeId="node-0xec3a830" />
-    </children>
-  </item>
-  <item nodeId="node-0xec3a830">
-    <command xml:space="preserve">talk to man</command>
-    <result xml:space="preserve">&quot;Everybody is useless these days?&quot;
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="89">YES</temporary>
-    <children>
-      <child nodeId="node-0x13dac450" />
-    </children>
-  </item>
-  <item nodeId="node-0x13dac450">
-    <command xml:space="preserve">talk to man</command>
-    <result xml:space="preserve">&quot;They just do not understand&quot;
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="88">YES</temporary>
   </item>
   <item nodeId="node-0xf673040">
     <command xml:space="preserve">i</command>
@@ -2353,6 +2977,300 @@ You can see Shelf (empty) here.
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="159">YES</temporary>
+  </item>
+  <item nodeId="node-0x171d5d90">
+    <command xml:space="preserve">buy apples</command>
+    <result xml:space="preserve">An apple pops out of the machine with a satisfying cha-ching.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="412">YES</temporary>
+    <children>
+      <child nodeId="node-0x169f7eb0" />
+    </children>
+  </item>
+  <item nodeId="node-0x169f7eb0">
+    <command xml:space="preserve">eat apples</command>
+    <result xml:space="preserve">[Your score has just gone up by one point.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="412">YES</temporary>
+    <children>
+      <child nodeId="node-0x1691fa80" />
+    </children>
+  </item>
+  <item nodeId="node-0x1691fa80">
+    <command xml:space="preserve">buy oreos</command>
+    <result xml:space="preserve">A package of oreos pops out of the machine with a satisfying cha-ching.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="412">YES</temporary>
+    <children>
+      <child nodeId="node-0x186d5430" />
+    </children>
+  </item>
+  <item nodeId="node-0x186d5430">
+    <command xml:space="preserve">give oreos</command>
+    <result xml:space="preserve">(to Attendant)
+&quot;Thank you so much! I&apos;m sure the reviewers can wait a while. Here is the key to where we keep all our sheet music. Good luck&quot;
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="412">YES</temporary>
+    <children>
+      <child nodeId="node-0x18650180" />
+    </children>
+  </item>
+  <item nodeId="node-0x18650180">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+East Corridor
+You can hear your own foot falls as you walk down a stone walk way. An older man sits hunched over on a cushioned bench cleaning his finger nails. To the north is the Music Library where all sorts of sheet music is kept. To your east is a Practice Room. Both rooms are locked because its after hours.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="412">YES</temporary>
+    <children>
+      <child nodeId="node-0x1864b150" />
+    </children>
+  </item>
+  <item nodeId="node-0x1864b150">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">(first unlocking the Music Library Door with The Library Key, then opening the door 
+
+Music Library
+Rows and rows of sheet music fill this room lining the walls and stretching from floor to celling. However, only shelf holds piano music.
+
+You can see Shelf here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="412">YES</temporary>
+    <children>
+      <child nodeId="node-0x187a0030" />
+    </children>
+  </item>
+  <item nodeId="node-0x187a0030">
+    <command xml:space="preserve">take prokofiev</command>
+    <result xml:space="preserve">Such a difficult piece will be sure to awe the reviewers if you can pull it off.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="412">YES</temporary>
+    <children>
+      <child nodeId="node-0x1693a520" />
+    </children>
+  </item>
+  <item nodeId="node-0x1693a520">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+East Corridor
+You can hear your own foot falls as you walk down a stone walk way. An older man sits hunched over on a cushioned bench cleaning his finger nails. To the north is the Music Library where all sorts of sheet music is kept. To your east is a Practice Room. Both rooms are locked because its after hours.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="412">YES</temporary>
+    <children>
+      <child nodeId="node-0x17170f20" />
+    </children>
+  </item>
+  <item nodeId="node-0x17170f20">
+    <command xml:space="preserve">talk to man</command>
+    <result xml:space="preserve">What&apos;s that you have there. Prokofiev! There is no way you will be able to play that without my help. Here&apos;s the key to the practice room. I&apos;ll meet you inside.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="412">YES</temporary>
+    <children>
+      <child nodeId="node-0x150c1e70" />
+    </children>
+  </item>
+  <item nodeId="node-0x150c1e70">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">(first unlocking the Practice Room Door with The Music Room Key, then opening the door 
+
+Practice Room
+As you enter the Practice room only two pieces of furniture stand out to you. One is a black piano with a seat before it on one wall of the room and the other a small dresser. The hallway is back to the west.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="412">YES</temporary>
+    <children>
+      <child nodeId="node-0x186d1ba0" />
+    </children>
+  </item>
+  <item nodeId="node-0x186d1ba0">
+    <command xml:space="preserve">take flyer</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="412">YES</temporary>
+    <children>
+      <child nodeId="node-0x1696eec0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1696eec0">
+    <command xml:space="preserve">sit on seat</command>
+    <result xml:space="preserve">You get into Piano Seat.
+
+You begin to practice working on all the most difficult sections of the piece. As you work away for more than half an hour you become noticeably better at the piece. You stand up turning to thank the man for his help only to find he is gone.
+
+Practice Room
+As you enter the Practice room only two pieces of furniture stand out to you. One is a black piano with a seat before it on one wall of the room and the other a small dresser. The hallway is back to the west.
+
+[Your score has just gone up by six points.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="412">YES</temporary>
+    <children>
+      <child nodeId="node-0x15e840d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x15e840d0">
+    <command xml:space="preserve">exit</command>
+    <result xml:space="preserve">But you aren&apos;t in anything at the moment.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="412">YES</temporary>
+    <children>
+      <child nodeId="node-0x186dba50" />
+    </children>
+  </item>
+  <item nodeId="node-0x186dba50">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">East Corridor
+You can hear your own foot falls as you walk down a stone walk way. An older man sits hunched over on a cushioned bench cleaning his finger nails. To the north is the Music Library where all sorts of sheet music is kept. To your east is a Practice Room. Both rooms are locked because its after hours.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="412">YES</temporary>
+    <children>
+      <child nodeId="node-0x1695dcc0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1695dcc0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Music Library
+Rows and rows of sheet music fill this room lining the walls and stretching from floor to celling. However, only shelf holds piano music.
+
+You can see Shelf (empty) here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="412">YES</temporary>
+    <children>
+      <child nodeId="node-0x18787350" />
+    </children>
+  </item>
+  <item nodeId="node-0x18787350">
+    <command xml:space="preserve">read plaque</command>
+    <result xml:space="preserve">You quickly scan the contents of the plaque. It rambles on for awhile about the construction of the Music Building then discusses various musical techniques stating that &quot;A common mistake of amateur pianists is the over dramatization of entire pieces. Many are so caught up in the pulse of the song that they fail to realize that certain sections are meant to be nondescript to act as a cleansing of the palate before the next dramatic section.&quot;
+
+[Your score has just gone up by one point.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="412">YES</temporary>
+    <children>
+      <child nodeId="node-0x7adb940" />
+    </children>
+  </item>
+  <item nodeId="node-0x7adb940">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+East Corridor
+You can hear your own foot falls as you walk down a stone walk way. An older man sits hunched over on a cushioned bench cleaning his finger nails. To the north is the Music Library where all sorts of sheet music is kept. To your east is a Practice Room. Both rooms are locked because its after hours.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="412">YES</temporary>
+    <children>
+      <child nodeId="node-0x15e5cb20" />
+    </children>
+  </item>
+  <item nodeId="node-0x15e5cb20">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+West Corridor
+Beside you here the hum of a black vending machine. Behind you the hallway carries on the east. To the south is a bathroom. In front of you is a small reception desk with a clipboard resting on it and the attendant sitting behind it looking up at you expectantly.
+
+Hello, you must be here for your piano audition. The reviewers are ready for you in the audition room the north. Lets get this over with quickly I really am starving.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="412">YES</temporary>
+    <children>
+      <child nodeId="node-0x16936950" />
+    </children>
+  </item>
+  <item nodeId="node-0x16936950">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Audition Room
+You glance around the room seeing a woman sitting in the audiance section facing a stage. On the stage is a Grand Piano with a Paino Stool resting before it.
+
+A beautiful sleek grand piano is centered in middle of the stage facing towards the audience section.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="412">YES</temporary>
+    <children>
+      <child nodeId="node-0xa9bd770" />
+    </children>
+  </item>
+  <item nodeId="node-0xa9bd770">
+    <command xml:space="preserve">talk to susan</command>
+    <result xml:space="preserve">&quot;Wait, aren&apos;t you a Pianist?&quot; you ask. &quot;Yes, in fact I am. How did you know?&quot; &quot;I found this old flyer for one of your recitals.&quot; &quot;Oh yes I remember this one. I think I will enjoy your playing very much.&quot;
+
+[Your score has just gone up by two points.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="412">YES</temporary>
+    <children>
+      <child nodeId="node-0x15078c70" />
+    </children>
+  </item>
+  <item nodeId="node-0x15078c70">
+    <command xml:space="preserve">sit on seat</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="412">YES</temporary>
+    <children>
+      <child nodeId="node-0x17174be0" />
+    </children>
+  </item>
+  <item nodeId="node-0x17174be0">
+    <command xml:space="preserve">sit on stool</command>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="411">YES</temporary>
   </item>
   <item nodeId="node-0x159df540">
     <command xml:space="preserve">x food</command>
