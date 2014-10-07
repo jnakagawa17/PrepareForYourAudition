@@ -92,7 +92,7 @@ Desk is scenery. It is in West Corridor. The description is "You examine the des
 
 Clipboard is scenery. It is in West Corridor. The description is "'Instrument Storage Sheet'[paragraph break] Jonathan Nakagawa , 10, Cello[paragraph break] Andrew Winnicki   , 10, Violin[paragraph break] Christopher Inouye, 10, Violin"
 
-Attendant is a woman in West Corridor. Understand "woman" as Attendant. Attendant carries Library Key. "Hello, you must be here for your piano audition. The reviewers are ready for you. Lets get this over with quickly I really am starving." 
+Attendant is a woman in West Corridor. Understand "woman" as Attendant. Attendant carries Library Key. "Hello, you must be here for your piano audition. The reviewers are ready for you in the audition room the north. Lets get this over with quickly I really am starving." 
 
 Instead of talking to Attendant:
 say "[one of]'I am so incredibly hungry right now.'[or]'Are you ready for your audition?'[or]'Good luck with your audition'[stopping]".
@@ -126,6 +126,8 @@ East Corridor is a room. The description is "You can hear your own foot falls as
 Pianist is a man in East Corridor. Pianist carries The Music Room Key. It is undescribed.
 
 Understand "man" as Pianist
+
+Understand "older man" as Pianist
 
 Instead of talking to Pianist:
 	if player carries Sheet Music of Ravel's Piano Concerto in g major:
@@ -190,28 +192,34 @@ Golden Inscription is scenery. The description is "The golden lettering reads 'B
 [Code for practicing pieces]
 
 Piano Seat is an open enterable scenery container. It is in Practice Room. It is undescribed. The description is "A black leather seat rests before the piano."
-
-After opening Piano seat:
-	if player carries Sheet Music of Twinkle Twinkle Little Star: 
-		say "You begin to practice working on all the most difficult sections of the piece. As you work away for more than half an hour you become noticeably better at the piece.";
-	otherwise:
-		if player carries Sheet Music of Prokofiev's second Piano Concerto: 
+Every Turn:
+	If player is in Piano seat for the first time:
+		if player carries Sheet Music of Twinkle Twinkle Little Star: 
 			say "You begin to practice working on all the most difficult sections of the piece. As you work away for more than half an hour you become noticeably better at the piece.";
-			increase score by 6;
 		otherwise:
-			if player carries Sheet Music of Beethoven's Fifth Piano Concerto in e-flat major: 
+			if player carries Sheet Music of Prokofiev's second Piano Concerto: 
 				say "You begin to practice working on all the most difficult sections of the piece. As you work away for more than half an hour you become noticeably better at the piece.";
-				increase score by 3;
+				increase score by 6;
 			otherwise:
-				if player carries Sheet Music of Ravel's Piano Concerto in g major: 
+				if player carries Sheet Music of Beethoven's Fifth Piano Concerto in e-flat major: 
 					say "You begin to practice working on all the most difficult sections of the piece. As you work away for more than half an hour you become noticeably better at the piece.";
-					increase score by 1;
+					increase score by 3;
+				otherwise:
+					if player carries Sheet Music of Ravel's Piano Concerto in g major: 
+						say "You begin to practice working on all the most difficult sections of the piece. As you work away for more than half an hour you become noticeably better at the piece.";
+						increase score by 1;
+					otherwise:
+						say "You need sheet music to practice.";
 
 Small Dresser is a container. It is in Practice Room. It is undescribed. The description is "A small wooden dresser stands in the corner of the room. A couple of loose pieces of paper rest on top of it along with several other random objects."
 
 Flyer is a thing. It is in Practice Room. It is undescribed. The description is "You quickly scan the contents of the papers. They are flyers for an old recital performed here.[paragraph break] 'Piano Recital'[paragraph break] Saturday, November 21st[paragraph break] 1:00 pm. -2:30 pm[paragraph break] Ms. Susan Wong performing Liszt First Concerto[paragraph break] Widely regarded as one of the most proficient performers of grand pieces critics rave.[paragraph break] 'Never before have I heard such musical complexity'"
 
 Understand "Loose pieces of paper" as flyer. 
+
+Understand "pieces of paper" as flyer.
+
+Understand "paper" as flyer.
 
 Random Objects is scenery. It is in Practice Room. The description is "An old wooden clock, black and white photograph, and few coins lie scattered across the top of the dresser. However, nothing catches your eye as being particularly interesting."
 
