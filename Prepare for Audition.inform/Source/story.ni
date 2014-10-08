@@ -6,6 +6,8 @@ The maximum score is 10
 
 Understand "buy" as taking
 
+Release along with cover art ("Cover art")
+
 [Code to display a players location in the game and possible exits in the header.]
 When play begins:
 now left hand status line is "Exits: [exit list]";
@@ -30,7 +32,9 @@ Understand "talk to [someone]" or “converse with
 Check talking to: say "[The noun] doesn't reply."
 [taken from http://www.musicwords.net/if/InformHandbook.pdf chapter 5]
 
-When play begins: say "Today is the day! More than a decade of work has led you to this one moment. You nerviously walk down a paved stone hallway torwards your test. You are increadbly unprepared for this Piano Audition. You haven't practiced or even really decided on what piece you are going to play. In truth you grew so nevious everytime you thought of the audition that in the last few weeks leading up to now you had trained yourself not to think of it at all. You woke up today at 9:00 glad that it's finally the weekend and you can for go responsibilites for the next couple days only to find to your shock and dismay that on you calendar was writen Piano Audition: 10:00 A.M. You didn't have time to grab sheet music or anything else. You pass through from the west side of the hallway to the east stopping before the attendant's desk."
+When play begins: say "Today is the day! More than a decade of work has led you to this one moment. You nervously walk down a paved stone hallway towards your test. You are incredibly unprepared for this Piano Audition. You haven't practiced or even really decided on what piece you are going to play. In truth you grew so nervous every time you thought of the audition that in the last few weeks leading up to now you had trained yourself not to think of it at all. You woke up today at 9:00 glad that it's finally the weekend and you can for go responsibilities for the next couple days only to find to your shock and dismay that on you calendar was written Piano Audition: 10:00 A.M. You didn't have time to grab sheet music or anything else. You pass through from the west side of the hallway to the east stopping before the attendant's desk."
+
+The description of player is "You glance down at yourself seeing that in your haste to get here you thew your clothes sloppily on yourself. One sock doesn't match the other and all the buttons on your shirt don't align perfectly."
 
 West Corridor is a room. It is west of East Corridor. The description is "Beside you here the hum of a black vending machine. Behind you the hallway carries on the east. To the south is a bathroom. In front of you is a small reception desk with a clipboard resting on it and the attendant sitting behind it looking up at you expectantly."
 
@@ -54,6 +58,12 @@ Instead of taking Peanuts:
 		
 Instead of taking Apples:
 	say "You need to buy them.";
+
+Understand "Oreo" as oreos.
+
+Understand "apple" as apples.
+
+Understand "Peanut" as Peanuts.
 
 Instead of buying Oreos:
 	if player carries Two Quarters:
@@ -90,7 +100,9 @@ increase score by 1;
 
 Desk is scenery. It is in West Corridor. The description is "You examine the desk finding it mostly unremarkable except for a clipboard resting on it."
 
-Clipboard is scenery. It is in West Corridor. The description is "'Instrument Storage Sheet'[paragraph break] Jonathan Nakagawa , 10, Cello[paragraph break] Andrew Winnicki   , 10, Violin[paragraph break] Christopher Inouye, 10, Violin"
+Clipboard is scenery. It is in West Corridor. The description is "'Instrument Storage Sheet'[paragraph break] Jonathan Nakagawa , 10, Cello (Programmer)[paragraph break] Andrew Winnicki   , 10, Violin (Beta Tester)[paragraph break] Emily Lung, 11, Cello (Beta Tester)[paragraph break] Erik Liu, 10, Piano (Beta Tester)"
+
+[Attendant conversation code]
 
 Attendant is a woman in West Corridor. Understand "woman" as Attendant. Attendant carries Library Key. "Hello, you must be here for your piano audition. The reviewers are ready for you in the audition room the north. Lets get this over with quickly I really am starving." 
 
@@ -121,7 +133,9 @@ Instead of giving apples to attendant:
 	otherwise:
 		say "You don't have any Apples"
 
-East Corridor is a room. The description is "You can hear your own foot falls as you walk down a stone walk way. An older man sits hunched over on a cushioned bench cleaning his finger nails. To the north is the Music Library where all sorts of sheet music is kept. To your east is a Practice Room. Both rooms are locked because its after hours."
+East Corridor is a room. The description is "You can hear your own foot falls as you walk down a stone walk way. An older man sits hunched over on a cushioned bench cleaning his finger nails. To the north is the Music Library where all sorts of sheet music is kept. To your south is a Practice Room. Both rooms are locked because its after hours."
+
+[Code for pianst reacting to you getting sheet music]
 
 Pianist is a man in East Corridor. Pianist carries The Music Room Key. It is undescribed.
 
@@ -152,6 +166,8 @@ Instead of talking to Pianist:
 				otherwise:
 					say "[one of]'Why does it have to be so damn hot all the time.'[or]'Everybody is useless these days?'[or]'They just do not understand'[stopping]".
 
+[I found that there were to many different actions people tried to turn on a sink and I coulnd't allow them all so I removed the bathroom]
+
 [Bathroom is a room. It is south of West Corridor. The description is "Glancing around you see a few empty stalls, a row of sinks, and a doorway leading back the way you came to the north."
 
 Row of Sinks is scenery. It is in Bathroom. The description is "The sinks are old and flaked from years of use but they are still functional. Each sink has a rusted hot and cold water handle."
@@ -167,7 +183,7 @@ Instead of "Turn on Cold Water":
 
 Toilet Stalls is a scenery. It is in Bathroom. The description is "You find nothing remarkable about them."]
 
-Practice Room is a room. The description is "As you enter the Practice room only two pieces of furniture stand out to you. One is a black piano with a seat before it on one wall of the room and the other a small dresser. The hallway is back to the west."
+Practice Room is a room. The description is "As you enter the Practice room only two pieces of furniture stand out to you. One is a black piano with a seat before it on one wall of the room and the other a small dresser. The hallway is back to the north."
 
 Practice Room Door is south of the East Corridor and north of the Practice Room. Practice Room Door is a door. Practice Room Door is scenery. Practice Room Door is lockable and locked. The Music Room Key unlocks the Practice Room Door.
 
@@ -178,7 +194,7 @@ Before going through the Practice Room Door:
 		if the Practice Room Door is not locked:
 			say "(first opening the Practice Room Door)[paragraph break]";
 			now the Practice Room Door is open;
-		otherwise if the player carries The Music Room Key:
+		otherwise if the player carries The Library Key:
 			say "(first unlocking the Practice Room Door with The Music Room Key, then opening the door [paragraph break]";
 			now the Practice Room Door is unlocked;
 			now the Practice Room Door is open.
@@ -214,8 +230,22 @@ Every Turn:
 						move player to Practice Room;
 					otherwise:
 						say "You need sheet music to practice.";
+						
+[Code for things someone might try taken from Mrs. Kiang's Wiki]
 
-Small Dresser is a container. It is in Practice Room. It is undescribed. The description is "A small wooden dresser stands in the corner of the room. A couple of loose pieces of paper rest on top of it along with several other random objects."
+Casting Practice Concerto is an action applying to nothing.
+Understand "Practice Concerto" as casting Practice Concerto.
+Instead of casting Practice Concerto:
+	If player is in Practice Room:
+		say "You need to sit down first.";
+	
+Casting Practice Piece is an action applying to nothing.
+Understand "Practice Piece" as casting Practice Piece.
+Instead of casting Practice Piece:
+	If player is in Practice Room:
+		say "You need to sit down first.";
+
+Small Dresser is a container. It is in Practice Room. It is undescribed. The description is "[if player carries flyer]A small wooden dresser stands in the corner of the room. A few random objects rest on top of it.[else] A small wooden dresser stands in the corner of the room. A couple of loose pieces of paper rest on top of it along with several other random objects."
 
 Flyer is a thing. It is in Practice Room. It is undescribed. The description is "You quickly scan the contents of the papers. They are flyers for an old recital performed here.[paragraph break] 'Piano Recital'[paragraph break] Saturday, November 21st[paragraph break] 1:00 pm. -2:30 pm[paragraph break] Ms. Susan Wong performing Liszt First Concerto[paragraph break] Widely regarded as one of the most proficient performers of grand pieces critics rave.[paragraph break] 'Never before have I heard such musical complexity'"
 
@@ -232,6 +262,10 @@ Random Objects is scenery. It is in Practice Room. The description is "An old wo
 Instead of going north:
 	If player is in West Corridor:
 		Move player to Audition Room;
+		if player carries flyer:
+			say  "'Hello, I'm Susan Wong I will be assessing your performance today. Just head up on the stage and begin when you are ready.' You don't know why but you get the feeling you heard her name before.";
+		otherwise:
+			say  "Hello, I'm Susan Wong I will be assessing your performance today. Just head up on the stage and begin when you are ready.";
 	otherwise:
 		If player is in East corridor:
 			If player has Library Key:
@@ -245,7 +279,7 @@ Instead of going north:
 		move player to West Corridor;
 	otherwise:]
 
-Music Library is a room. The description is "Rows and rows of sheet music fill this room lining the walls and stretching from floor to celling. However, only shelf holds piano music."
+Music Library is a room. The description is "Rows and rows of sheet music fill this room lining the walls and stretching from floor to celling. However, only shelf holds piano music. A plaque is afixed next to the door frame you just entered through."
 
 Music Library Door is north of the East Corridor and south of the Music Library. Music Library Door is a door. Music Library Door is scenery. Music Library Door is lockable and locked. The Library key unlocks the Music Library Door.
 
@@ -328,10 +362,10 @@ After entering Audition room for the first time:
 Grand Piano is a thing. It is in Audition Room. "A beautiful sleek grand piano is centered in middle of the stage facing towards the audience section."  
 
 Piano Stool is an open enterable scenery container. It is in Audition Room. It is undescribed. The description is "A leather upholstered stool stands in front of the grand piano."
-
-[After sitting on Piano Stool:]
 	
 Susan Wong is a woman in Audition Room. It is undescribed. The description is "Susan Wong is a rather short black haired Asian woman. She is currently sitting in chair watching and waiting of you to head up to the stage."
+
+Understand "woman" as Susan Wong
 
 Instead of talking to Susan Wong:
 	if player carries flyer:
@@ -340,6 +374,18 @@ Instead of talking to Susan Wong:
 		increase score by 2;
 	otherwise:
 		say "[one of]'We are ready when you are.'[or]'Feel free to start.'[stopping]".
+		
+Casting Play Piece is an action applying to nothing.
+Understand "Play Piece" as casting Play Piece.
+Instead of casting Play Piece:
+	If player is in Audition Room:
+		say "You need to sit down first.";
+
+Casting Play Concerto is an action applying to nothing.
+Understand "Play Concerto" as casting Play Concerto.
+Instead of casting Play Concerto:
+	If player is in Audition Room:
+		say "You need to sit down first.";
 
 Every turn:
 	if the player is in Piano Stool:
@@ -355,3 +401,25 @@ Every turn:
 					end the story finally saying "As you play through your piece you realize that you have no idea what you are doing. Every note is completely off timed, you use no dynamics playing everything in a single monotone buzz. You glance over at Susan Wong and find that she has stood up. She exclaims, 'This is so terrible I can't stand to here it for another second.' Then storms out of the room. You have completely failed you audition.";
 
 Hole is a container. It is locked and lockable.
+
+[x Vending Machine
+x food products
+buy oreos
+buy apples/peanuts
+give aples/peanuts/oreos to attendant
+go east
+go north
+take prokofiev's Piano concerto
+read plaque
+go south
+talk to man
+go south
+sit on seat
+x dresser
+x paper
+take flyer
+go north
+go east
+go north
+talk to Susan Wong
+sit on stool]
